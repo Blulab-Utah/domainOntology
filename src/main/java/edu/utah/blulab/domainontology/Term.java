@@ -2,10 +2,34 @@ package edu.utah.blulab.domainontology;
 
 import java.util.ArrayList;
 
+import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLIndividual;
+import org.semanticweb.owlapi.model.OWLOntologyManager;
+
 public class Term {
-	private String prefTerm, prefCode, definition;
+	private String URI, prefTerm, prefCode, definition;
 	private ArrayList<String> synonym, misspelling, abbreviation, subjExp, regex, altCode;
 	
+	public Term(){
+		URI = "";
+		prefTerm = "";
+		prefCode = "";
+		definition = "";
+		synonym = new ArrayList<String>();
+		misspelling = new ArrayList<String>();
+		abbreviation = new ArrayList<String>();
+		subjExp = new ArrayList<String>();
+		regex = new ArrayList<String>();
+		altCode = new ArrayList<String>();
+	}
+	
+
+	public String getURI() {
+		return URI;
+	}
+	public void setURI(String URI) {
+		this.URI = URI;
+	}
 	public String getPrefTerm() {
 		return prefTerm;
 	}
@@ -62,7 +86,7 @@ public class Term {
 	}
 	@Override
 	public String toString() {
-		return "Term [prefTerm=" + prefTerm + ", prefCode=" + prefCode
+		return "Term [prefTerm=" + prefTerm + ", URI=" + URI + ", prefCode=" + prefCode
 				+ ", definition=" + definition + ", synonym=" + synonym
 				+ ", misspelling=" + misspelling + ", abbreviation="
 				+ abbreviation + ", subjExp=" + subjExp + ", regex=" + regex

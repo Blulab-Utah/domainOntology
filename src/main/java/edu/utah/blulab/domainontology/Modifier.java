@@ -24,7 +24,7 @@ public class Modifier {
 	private ArrayList<Modifier> closures, pseudos;
 	
 	
-	public Modifier(String name, OWLOntologyManager manager){
+	public Modifier(String name, OWLOntologyManager manager, OWLOntology domainOnt){
 		OWLDataFactory factory = manager.getOWLDataFactory();
 		closures = new ArrayList<Modifier>();
 		pseudos = new ArrayList<Modifier>();
@@ -53,7 +53,7 @@ public class Modifier {
 		Set<OWLIndividual> lexItems = modCls.getIndividuals(manager.getOntologies());
 		for(OWLIndividual ind : lexItems){
 			//System.out.println(ind.toString());
-			items.add(new LexicalItem(ind, manager));
+			items.add(new LexicalItem(ind, manager, domainOnt));
 		}
 		
 		

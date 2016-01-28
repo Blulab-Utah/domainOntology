@@ -8,11 +8,15 @@ import java.util.Set;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAnnotation;
 import org.semanticweb.owlapi.model.OWLAnnotationProperty;
+import org.semanticweb.owlapi.model.OWLAnnotationValue;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataPropertyExpression;
+import org.semanticweb.owlapi.model.OWLDatatype;
+import org.semanticweb.owlapi.model.OWLEntity;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
+import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 
 public class LexicalItem {
@@ -20,7 +24,7 @@ public class LexicalItem {
 	private Term term;
 	private int windowSize;
 	
-	public LexicalItem(OWLIndividual item, OWLOntologyManager manager){
+	public LexicalItem(OWLIndividual item, OWLOntologyManager manager, OWLOntology domainOnt){
 		OWLDataFactory factory = manager.getOWLDataFactory();
 		
 		//Set uri
@@ -30,32 +34,39 @@ public class LexicalItem {
 		term = new Term();
 		term.setPrefTerm(getAnnotationProperty(item, manager, factory, 
 				factory.getOWLAnnotationProperty(IRI.create(OntologyConstants.PREF_TERM)), OntologyConstants.ENGLISH,
-				IRI.create(OntologyConstants.CT_PM)));
+				domainOnt.getOntologyID().getOntologyIRI()));
+		term.setSynonym(getAnnotationPropertyList(item, manager, 
+				factory.getOWLAnnotationProperty(IRI.create(OntologyConstants.SYNONYM)), OntologyConstants.ENGLISH,
+				domainOnt.getOntologyID().getOntologyIRI()));
+		
+		
 		//term.setSynonym(getEnglishDataProperty(item, manager, factory.getOWLDataProperty(IRI.create(OntologyConstants.ALT_TERM))));
 		//term.setRegex(getEnglishDataProperty(item, manager, factory.getOWLDataProperty(IRI.create(OntologyConstants.EN_REGEX))));
 		
 		//Get English action associated with lexical item
-		/**Set<OWLIndividual> enActions = item.getObjectPropertyValues(factory.getOWLObjectProperty(IRI.create(OntologyConstants.ACTION_EN)), 
-				manager.getOntology(IRI.create(OntologyConstants.MO_PM)));
+		Set<OWLIndividual> enActions = item.getObjectPropertyValues(factory.getOWLObjectProperty(IRI.create(OntologyConstants.ACTION_EN)), 
+				domainOnt);
 		for(OWLIndividual action : enActions){
+			System.out.println(action.asOWLNamedIndividual().getIRI().getShortForm());
 			actionEn = action.asOWLNamedIndividual().getIRI().getShortForm();
-		}**/
+		}
 		
 		
 	}
 	
-	private ArrayList<String> getAnnotationProperty(OWLIndividual ind, OWLOntologyManager manager, OWLAnnotationProperty property){
+	private ArrayList<String> getAnnotationPropertyList(OWLIndividual ind, OWLOntologyManager manager, 
+			OWLAnnotationProperty property, String language, IRI ontology){
 		ArrayList<String> labels = new ArrayList<String>();
 		
-		Set<OWLAnnotation> annotations = ind.asOWLNamedIndividual().getAnnotations(manager.getOntology(IRI.create(OntologyConstants.MO_PM)), 
+		Set<OWLAnnotation> annotations = ind.asOWLNamedIndividual().getAnnotations(manager.getOntology(ontology), 
 				property);
 		if(!annotations.isEmpty()){
-			Iterator<OWLAnnotation> iter = annotations.iterator();
-			while(iter.hasNext()){
-				OWLAnnotation ann = iter.next();
-				String temp = ann.getValue().toString();
-				temp = temp.substring(temp.indexOf("\"")+1, temp.lastIndexOf("\""));
-				labels.add(temp);
+			for(OWLAnnotation ann : annotations){
+				OWLLiteral value = (OWLLiteral) ann.getValue();
+				if(value.getLang().equals(language)){
+					//System.out.println("This is english value");
+					labels.add(value.getLiteral());
+				}
 			}
 		}
 		
@@ -70,7 +81,14 @@ public class LexicalItem {
 		
 		if(!annotations.isEmpty()){
 			for(OWLAnnotation ann : annotations){
-				System.out.println(ann);
+				
+				OWLLiteral value = (OWLLiteral) ann.getValue();
+				if(value.getLang().equals(language)){
+					//System.out.println("This is english value");
+					str = value.getLiteral();
+				}
+				
+				
 			}
 		}
 			

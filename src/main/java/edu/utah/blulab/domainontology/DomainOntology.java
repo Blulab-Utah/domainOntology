@@ -40,7 +40,7 @@ public class DomainOntology {
 	private PrefixManager pm;
 	private File ontFile;
 	private String ontURI;
-	private ArrayList<Term> anchorDictionary;
+	private HashMap<String, Term> anchorDictionary;
 	private static HashMap<String, Modifier> modifierDictionary;
 	private ArrayList<Modifier> closureDictionary;
 	private ArrayList<Relation> relationshipDictionary;
@@ -48,6 +48,7 @@ public class DomainOntology {
 	private final static String MODIFIERS = "Modifiers";
 	private final String RULES = "Rules";
 	private final static String RELATIONS = "Relationships";
+	private ArrayList<OWLObjectProperty> modifierProps;
 	
 	public DomainOntology(String fileLocation) throws Exception{
 		manager = OWLManager.createOWLOntologyManager();
@@ -56,7 +57,7 @@ public class DomainOntology {
 		ontology = manager.loadOntologyFromOntologyDocument(ontFile);
 		ontURI = ontology.getOntologyID().getOntologyIRI().toString();
 		pm = new DefaultPrefixManager(ontURI + "#");
-		anchorDictionary = new ArrayList<Term>();
+		anchorDictionary = new HashMap<String, Term>();
 		modifierDictionary = new HashMap<String, Modifier>();
 		closureDictionary = new ArrayList<Modifier>();
 		relationshipDictionary = new ArrayList<Relation>();
@@ -68,18 +69,19 @@ public class DomainOntology {
 			
 		}
 		
+		modifierProps = getAllProperties(factory.getOWLObjectProperty(IRI.create(OntologyConstants.SO_PM + "#hasModifier")));
+		/**for(OWLObjectProperty p : modifierProps){
+			System.out.println (p.toString());
+		}**/
+		
 	}
 	
 	
 	public Variable getVariable(String clsName){
-		Variable var = new Variable();
-		Term term = new Term();
 		//Get OWL class
 		OWLClass cls = factory.getOWLClass(clsName, pm);
 		
-		getVariable(cls);
-		
-		return var;
+		return getVariable(cls);
 	}
 	
 	public Variable getVariable(OWLClass cls){
@@ -92,7 +94,7 @@ public class DomainOntology {
 		//Set variable name using RDF:label
 		var.setVarName(getAnnotationString(cls, factory.getRDFSLabel()));
 		
-		//Extract anchor from variable class
+		//Extract defining classes/relationships (i.e. get anchor and defining modifiers)
 		OWLClass anchor = null;
 		Set<OWLClassExpression> exps = cls.getEquivalentClasses(ontology);
 		for(OWLClassExpression e : exps){
@@ -105,20 +107,20 @@ public class DomainOntology {
 					anchor = objprop.getFiller().asOWLClass();
 				}else{
 					ArrayList<Modifier> modifiers = var.getModifiers();
-					Modifier mod = new Modifier(objprop.getFiller().asOWLClass().getIRI().toString(), manager);
+					Modifier mod = new Modifier(objprop.getFiller().asOWLClass().getIRI().toString(), manager, ontology);
 					modifiers.add(mod);
 					var.setModifiers(modifiers);
 					if(!modifierDictionary.containsKey(mod.getUri())){
 						modifierDictionary.put(mod.getUri(), mod);
 					}
 				}
-				//System.out.println(objprop.getFiller());
-				//System.out.println(objprop.getProperty());
-				
 			}
 		}
 		
 		if(!anchor.equals(null)){
+			//Set URI for anchor
+			term.setURI(anchor.asOWLClass().getIRI().toQuotedString());
+			
 			//Set preferred label for anchor
 			term.setPrefTerm(getAnnotationString(anchor, 
 					factory.getOWLAnnotationProperty(IRI.create(OntologyConstants.PREF_TERM))));
@@ -153,7 +155,9 @@ public class DomainOntology {
 			
 			//Add concept to variable and concept dictionary
 			var.setAnchor(term);
-			anchorDictionary.add(term);
+			if(!anchorDictionary.containsKey(term.getURI())){
+				anchorDictionary.put(term.getURI(), term);
+			}
 		}
 		
 		
@@ -178,14 +182,6 @@ public class DomainOntology {
 		
 		HashMap<String, ArrayList<String>> details = getClassDetails(cls);
 		
-		//Get list of modifiers
-		//var.setModifiers(getModifiers(cls));
-		//var.setModifiers(details.get(MODIFIERS));
-		
-		//Get list of relations
-		//var.setRelationships(details.get(RELATIONS));
-
-		//System.out.println(var);
 		return var;
 	}
 	
@@ -225,32 +221,7 @@ public class DomainOntology {
 		
 		
 	}
-	
-	
-	
-	/**public void getElementCategoryList(OWLClass elementCls, ArrayList<OWLClass> elements){
-		
-		
-		if(elementCls == null || elements.contains(elementCls)){
-			return;
-		}
-		
-		//if class belongs to Schema Ontology don't add to list
-		
-		Set<OWLClassExpression> parentExp = elementCls.getSubClasses(manager.getOntologies());
-		System.out.println("Class " + elementCls.asOWLClass().getIRI());
-		for(OWLClassExpression subCls : parentExp){
-			System.out.println("Expression: " + subCls.asOWLClass().toString());
-			if(!elements.contains(elementCls.asOWLClass())){
-				elements.add(elementCls.asOWLClass());
-			}
-			getElementCategoryList(subCls.asOWLClass(), elements);
-		}
-		
-		
-	}**/
-	
-	
+
 	private static HashMap<String,ArrayList<String>> getClassDetails(OWLClass cls){
 		HashMap<String, ArrayList<String>> details = new HashMap<String, ArrayList<String>>();
 		ArrayList<String> modifiers = new ArrayList<String>();
@@ -323,8 +294,8 @@ public class DomainOntology {
 		return labelSet;
 	}
 	
-	public ArrayList<Term> getAnchorDictionary(){
-		return anchorDictionary;
+	public Collection<Term> getAnchorDictionary(){
+		return anchorDictionary.values();
 	}
 	
 	public Collection<Modifier> getModifierDictionary() throws Exception{
@@ -333,6 +304,39 @@ public class DomainOntology {
 	
 	public ArrayList<Modifier> getClosureDictionary(){
 		return closureDictionary;
+	}
+	
+	private void getPropertyList(OWLObjectProperty prop, ArrayList<OWLObjectProperty> properties, ArrayList<OWLObjectProperty> propList){
+		//make sure class exists and hasn't already been visited
+		//OWLObjectProperty c = factory.getOWLClass(cls.getIRI());
+		if(prop == null || properties.contains(prop)){
+			return;
+		}
+		
+		
+		Set<OWLObjectPropertyExpression> subExp = prop.getSubProperties(manager.getOntologies());//cls.getSubClasses(manager.getOntologies());
+		//System.out.println("Class " + cls.asOWLClass().getIRI());
+		for(OWLObjectPropertyExpression subProp : subExp){
+			//System.out.println("Expression: " + subCls.asOWLClass().toString());
+			if(!properties.contains(prop.asOWLObjectProperty())){
+				properties.add(prop.asOWLObjectProperty());
+			}
+			if(!propList.contains(subProp.asOWLObjectProperty())){
+				propList.add(subProp.asOWLObjectProperty());
+			}
+			
+			getPropertyList(subProp.asOWLObjectProperty(), properties, propList);
+		}
+		
+		
+		
+	}
+	
+	public ArrayList<OWLObjectProperty> getAllProperties(OWLObjectProperty prop){
+		ArrayList<OWLObjectProperty> props = new ArrayList<OWLObjectProperty>();
+		getPropertyList(prop, new ArrayList<OWLObjectProperty>(), props);
+		
+		return props;
 	}
 	
 	
