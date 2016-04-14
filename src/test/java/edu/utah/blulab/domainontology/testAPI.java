@@ -10,7 +10,7 @@ public class testAPI {
     @Test
     public void example1() throws Exception {
         // TODO Auto-generated method stub
-        DomainOntology domain = new DomainOntology("src/main/resources/colonoscopy_20141001.owl", false);
+        DomainOntology domain = new DomainOntology("src/main/resources/98_heartFailure.owl", false);
         //DomainOntology domain = new DomainOntology("/Users/mtharp/use_cases/DomainOntologies/pneumonia.owl");
         //DomainOntology domain = new DomainOntology("/Users/mtharp/Desktop/vincipneu.owl.xml");
         //DomainOntology domain = new DomainOntology("C:\\Users\\Bill\\Desktop\\carotid stenosis.owl");
@@ -40,7 +40,7 @@ public class testAPI {
 
     @Test
     public void example2() throws Exception {
-        DomainOntology domain = new DomainOntology("src/main/resources/colonoscopy_20141001.owl", true);
+        DomainOntology domain = new DomainOntology("src/main/resources/98_heartFailure.owl", true);
         System.out.println("domain's methods");
         domain.getDisplayName("");
         for (Method m : domain.getClass().getMethods()) {
