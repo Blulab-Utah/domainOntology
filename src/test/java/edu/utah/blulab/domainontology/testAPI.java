@@ -38,8 +38,12 @@ public class testAPI {
         }
     }
 
+    /**
+     * Use reflection to test methods
+     * @throws Exception
+     */
     @Test
-    public void example2() throws Exception {
+    public void testReflectionMethods() throws Exception {
         DomainOntology domain = new DomainOntology("src/main/resources/98_heartFailure.owl", true);
         System.out.println("domain's methods");
         domain.getDisplayName("");
@@ -65,6 +69,87 @@ public class testAPI {
             } else {
                 System.out.println("Not called: " + m.getName());
                 System.out.println("Parameter length: " + m.getParameterTypes().length);
+            }
+        }
+    }
+
+    @Test
+    public void example3() throws Exception {
+        DomainOntology domain = new DomainOntology("src/main/resources/98_heartFailure.owl", true);
+        System.out.println("domain's methods");
+        ArrayList<Variable> domainVariables = domain.getAllVariables();
+        for (Variable var : domainVariables) {
+            System.out.println("Variable Name:"+var.getVarName());
+            ArrayList<LogicExpression<Term>> logicExpressions = var.getAnchor();
+            for (LogicExpression<Term> logicExpression:logicExpressions){
+                if (logicExpression.isSingleExpression()){
+                    for(Term term:logicExpression){
+                        String targetTypeName = var.getVarName();
+                        targetTypeName = targetTypeName.replaceAll(" +", "_").toUpperCase();
+                        if (term.getSynonym().size() > 0) {
+                            System.out.println("\tSynonyms:");
+                            for (String s : term.getSynonym()) {
+                                System.out.println("\t\t"+s);
+                            }
+                        }
+                        System.out.println("\tAbbreviation:");
+                        if (term.getAbbreviation().size() > 0) {
+                            for (String s : term.getAbbreviation())
+                                System.out.println("\t\t"+s);
+                        }
+                        System.out.println("\tMisspelling:");
+                        if (term.getMisspelling().size() > 0) {
+                            for (String s : term.getMisspelling())
+                                System.out.println("\t\t"+s);
+                        }
+                        ArrayList<LogicExpression<Modifier>> modifiers=var.getModifiers();
+                        for(LogicExpression<Modifier>modifier:modifiers){
+                            System.out.println("\tModifier type: "+modifier.getType()+"\t"+modifier.isSingleExpression());
+                            for(Modifier ele:modifier){
+                                System.out.println("\tModifier name: "+ele.getModName());
+                                System.out.println("\t\tModifier get pseudo "+ele.getPseudos());
+                                System.out.println("\t\tModifier direct children: "+ele.getDirectChildren());
+                                System.out.println("\t\tIs default? "+ele.isDefault());
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    @Test
+    public void example4() throws Exception {
+        DomainOntology domain = new DomainOntology("src/main/resources/98_heartFailure.owl", true);
+        System.out.println("domain's methods");
+        ArrayList<Variable> domainVariables = domain.getAllVariables();
+        for (Variable var : domainVariables) {
+            System.out.println("Variable Name:"+var.getVarName());
+            ArrayList<LogicExpression<Term>> logicExpressions = var.getAnchor();
+            for (LogicExpression<Term> logicExpression:logicExpressions){
+                System.out.println("\tlogicExpression type: "+logicExpression.getType());
+                if (!logicExpression.isSingleExpression()){
+                    for(Term term:logicExpression){
+                        String targetTypeName = var.getVarName();
+                        targetTypeName = targetTypeName.replaceAll(" +", "_").toUpperCase();
+                        if (term.getSynonym().size() > 0) {
+                            System.out.println("\tSynonyms:");
+                            for (String s : term.getSynonym()) {
+                                System.out.println("\t\t"+s);
+                            }
+                        }
+                        System.out.println("\tAbbreviation:");
+                        if (term.getAbbreviation().size() > 0) {
+                            for (String s : term.getAbbreviation())
+                                System.out.println("\t\t"+s);
+                        }
+                        System.out.println("\tMisspelling:");
+                        if (term.getMisspelling().size() > 0) {
+                            for (String s : term.getMisspelling())
+                                System.out.println("\t\t"+s);
+                        }
+                    }
+                }
             }
         }
     }
