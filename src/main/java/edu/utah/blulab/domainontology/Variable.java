@@ -101,7 +101,9 @@ public class Variable {
 			ArrayList<OWLClassExpression> expList = entry.getValue();
 
 			for(OWLClassExpression cls : expList){
-				if(!cls.isAnonymous()){
+				Object obj = domain.convertOWLObject(cls);
+				mods.put(property, (LogicExpression) obj);
+				/**if(!cls.isAnonymous()){
 					LogicExpression<Modifier> modifierList =  new LogicExpression<Modifier>("SINGLE");
 					modifierList.add(new Modifier(cls.asOWLClass().getIRI().toString(), domain));
 					mods.put(property, modifierList);
@@ -117,7 +119,7 @@ public class Variable {
 						}
 						mods.put(property, modifierList);
 					}
-				}
+				}**/
 			}
 		}
 

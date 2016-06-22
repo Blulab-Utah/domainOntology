@@ -906,12 +906,92 @@ public class DomainOntology {
 		manager.saveOntology(ontology);
 	}
 
+	protected Object convertOWLObject(OWLObject val){
+		if (val == null){
+			return null;
+		}
 
-	public void setAnnotationToVariable(AnnotationObject annotation, Variable variable) throws OWLOntologyStorageException {
-		OWLClass cls = factory.getOWLClass(IRI.create(variable.getURI()));
-		OWLNamedIndividual indiv = factory.getOWLNamedIndividual(IRI.create(annotation.getUri()));
-		OWLClassAssertionAxiom axiom = factory.getOWLClassAssertionAxiom(cls, indiv);
-		manager.addAxiom(ontology, axiom);
+		if (val instanceof OWLLiteral){
+			OWLLiteral lit = (OWLLiteral) val;
+
+			if(lit.isBoolean()){
+				return lit.parseBoolean();
+			}
+			if(lit.isDouble()){
+				return lit.parseDouble();
+			}
+			if(lit.isFloat()){
+				return lit.parseFloat();
+			}
+			if(lit.getLang().equalsIgnoreCase("en")){
+				return lit.getLiteral();
+			}
+
+		}else if(val instanceof OWLClass){
+			/**LogicExpression expression = new LogicExpression(LogicExpression.SINGLE);
+			expression.add(((OWLClass)val).asOWLClass());**/
+			return ((OWLClass) val).asOWLClass();
+		}else if (val instanceof OWLIndividual){
+			return ((OWLIndividual) val).asOWLNamedIndividual();
+		}else if (val instanceof OWLAnnotationProperty){
+			return ((OWLAnnotationProperty) val).asOWLAnnotationProperty();
+		}else if (val instanceof OWLNaryBooleanClassExpression){
+			LogicExpression expression = new LogicExpression();
+			if (val instanceof OWLObjectIntersectionOf){
+				expression.setType(LogicExpression.AND);
+			}else if (val instanceof  OWLObjectUnionOf){
+				expression.setType(LogicExpression.OR);
+			}
+			for(OWLClassExpression exp : ((OWLNaryBooleanClassExpression)val).getOperands()){
+				expression.add(convertOWLObject(exp));
+			}
+			return expression;
+		}else if (val instanceof OWLNaryDataRange){
+			LogicExpression expression = new LogicExpression();
+			if (val instanceof  OWLDataIntersectionOf){
+				expression.setType(LogicExpression.AND);
+			}else if (val instanceof OWLDataUnionOf){
+				expression.setType(LogicExpression.OR);
+			}
+			for (OWLDataRange range : ((OWLNaryDataRange)val).getOperands()){
+				expression.add(convertOWLObject(range));
+			}
+			return expression;
+		}else if (val instanceof OWLDataOneOf){
+			LogicExpression expression = new LogicExpression(LogicExpression.OR);
+			for (OWLLiteral lit : ((OWLDataOneOf)val).getValues()){
+				expression.add(convertOWLObject(lit));
+			}
+			return expression;
+		}else if (val instanceof OWLObjectComplementOf){
+			LogicExpression expression = new LogicExpression(LogicExpression.COMPLEMENT);
+			expression.add(convertOWLObject(((OWLObjectComplementOf)val).getOperand()));
+			return expression;
+		}else if (val instanceof OWLRestriction){
+			return val;
+		}else if (val instanceof OWLDataRange){
+			OWLDataRange range = (OWLDataRange)val;
+			if(range.isDatatype()){
+				if (range.asOWLDatatype().isBoolean()){
+					return Boolean.FALSE;
+				}else if(range.asOWLDatatype().isInteger()){
+					return new Integer(0);
+				}else if(range.asOWLDatatype().isDouble()){
+					return new Double(0);
+				}else if(range.asOWLDatatype().isFloat()){
+					return new Float(0);
+				}else{
+					return new String("string");
+				}
+			}
+		}
+		return null;
+	}
+
+	protected void setMemberOf(OWLIndividual indiv, OWLClass cls) throws Exception{
+		OWLNamedIndividual individual = indiv.asOWLNamedIndividual();
+		OWLClassAssertionAxiom classAssertionAxiom = factory.getOWLClassAssertionAxiom(cls, individual);
+		manager.addAxiom(ontology, classAssertionAxiom);
 		manager.saveOntology(ontology);
 	}
 

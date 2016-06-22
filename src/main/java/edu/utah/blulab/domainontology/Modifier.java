@@ -27,6 +27,18 @@ public class Modifier {
 	public String getUri() {
 		return uri;
 	}
+
+	public boolean isDefaultValue(){
+		boolean isDefault = false;
+		ArrayList<String> boolValues = domain.getDataPropertyFiller(domain.getClass(uri),
+				domain.getFactory().getOWLDataProperty(IRI.create(OntologyConstants.IS_DEFAULT)));
+		for(String val : boolValues){
+			if(val.equalsIgnoreCase("true")){
+				isDefault = true;
+			}
+		}
+		return isDefault;
+	}
 	
 	public ArrayList<LexicalItem> getItems() {
 		ArrayList<LexicalItem> items = new ArrayList<LexicalItem>();
@@ -136,6 +148,7 @@ public class Modifier {
 	@Override
 	public String toString() {
 		return "\n\tModifier: " + this.getModName() + ", uri=" + uri
+				+ this.isDefault()
 				//+ ", items=" + this.getItems()
 				//+ "\n\t\t Pseudos=" + this.getPseudos()
 				//+ "\n\t\t Closures=" + this.getClosures()

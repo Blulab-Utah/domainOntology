@@ -71,4 +71,5 @@ public class OntologyConstants {
 	public static final String HAS_ANNOTATION_TYPE = SO_PM + "#hasAnnotationType";
 	public static final String HAS_DOCUMENT_ID = SO_PM + "#hasDocumentID";
 	public static final String HAS_SPAN = SO_PM + "#hasSpan";
+	public static final String IS_DEFAULT = CT_PM + "#isDefaultValue";
 }

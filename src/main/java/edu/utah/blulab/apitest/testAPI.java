@@ -21,7 +21,7 @@ public class testAPI {
 		//domain.getVariable("leukocytosis");
 		//System.out.println(domain.getVariable("KA001014"));
 		System.out.println(domain.getVariable("KA_1006"));
-		System.out.println(domain.getVariable("KA_1003"));
+		System.out.println(domain.getVariable("KA_1002"));
 		
 		//System.out.println(domain.getVariable("KA_1005").hasNumericModifiers());
 		//System.out.println(domain.getVariable("KA_1006").hasNumericModifiers());

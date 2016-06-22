@@ -1,5 +1,6 @@
 package edu.utah.blulab.domainontology;
 
+import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 import java.util.ArrayList;
@@ -9,9 +10,23 @@ public class AnnotationObject {
     private String uri;
     private DomainOntology domain;
 
-    public AnnotationObject(String annotationID, DomainOntology domain){
+    public AnnotationObject(Object annotationType, String annotationID, DomainOntology domain) throws Exception{
         this.domain = domain;
         uri = domain.getDomainURI() + "#" + annotationID;
+
+        if(annotationType instanceof Variable){
+            Variable variable = (Variable) annotationType;
+            domain.setMemberOf(domain.getFactory().getOWLNamedIndividual(IRI.create(uri)),
+                    domain.getFactory().getOWLClass(IRI.create(variable.getURI())));
+        }else if (annotationType instanceof Modifier){
+            Modifier modifier = (Modifier) annotationType;
+            domain.setMemberOf(domain.getFactory().getOWLNamedIndividual(IRI.create(uri)),
+                    domain.getFactory().getOWLClass(IRI.create(modifier.getUri())));
+        }else if (annotationType instanceof Term){
+            Term term = (Term) annotationType;
+            domain.setMemberOf(domain.getFactory().getOWLNamedIndividual(IRI.create(uri)),
+                    domain.getFactory().getOWLClass(IRI.create(term.getURI())));
+        }
     }
 
     public String getUri() {
