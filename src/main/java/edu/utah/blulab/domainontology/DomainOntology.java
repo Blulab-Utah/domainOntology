@@ -6,7 +6,6 @@ import java.util.*;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
-import org.semanticweb.owlapi.util.DefaultPrefixManager;
 import org.semanticweb.owlapi.vocab.OWLFacet;
 
 public class DomainOntology {
@@ -503,11 +502,11 @@ public class DomainOntology {
 		return list;
 	}
 	
-	public ArrayList<Term> createAnchorDictionary(){
-		ArrayList<Term> clsList = new ArrayList<Term>();
+	public ArrayList<Anchor> createAnchorDictionary(){
+		ArrayList<Anchor> clsList = new ArrayList<Anchor>();
 		
 		for(OWLClass cls: this.getAllSubClasses((factory.getOWLClass(IRI.create(OntologyConstants.TARGET))), false)){
-			clsList.add(new Term(cls.getIRI().toString(), this));
+			clsList.add(new Anchor(cls.getIRI().toString(), this));
 		}
 		return clsList;
 	}
@@ -531,35 +530,17 @@ public class DomainOntology {
 		HashMap<String, ArrayList<Modifier>> modifierMap = new HashMap<String, ArrayList<Modifier>>();
 		ArrayList<String> lingModifiers = this.getDirectSubClasses(
 				factory.getOWLClass(IRI.create(OntologyConstants.LINGUISTIC_MODIFIER)));
-		for(String parentName : lingModifiers){
-			//System.out.println(parentName);
-			ArrayList<Modifier> modifierList = new ArrayList<Modifier>();
-			for(OWLClass cls : this.getAllSubClasses(factory.getOWLClass(IRI.create(parentName)), false)){
-				modifierList.add(new Modifier(cls.getIRI().toString(), this));
-			}
-			if(!modifierList.isEmpty()){
-				modifierMap.put(parentName, modifierList);
-			}
-
-		}
-
 		ArrayList<String> numModifiers = this.getDirectSubClasses(
 				factory.getOWLClass(IRI.create(OntologyConstants.NUMERIC_MODIFIER)));
-		for(String parentName : numModifiers){
-			//System.out.println(parentName);
-			ArrayList<Modifier> modifierList = new ArrayList<Modifier>();
-			for(OWLClass cls : this.getAllSubClasses(factory.getOWLClass(IRI.create(parentName)), false)){
-				modifierList.add(new Modifier(cls.getIRI().toString(), this));
-			}
-			if(!modifierList.isEmpty()){
-				modifierMap.put(parentName, modifierList);
-			}
-
-		}
-
 		ArrayList<String> semModifiers = this.getDirectSubClasses(
 				factory.getOWLClass(IRI.create(OntologyConstants.SEMANTIC_MODIFIER)));
-		for(String parentName : semModifiers){
+
+		ArrayList<String> allModifiers = new ArrayList<String>();
+		allModifiers.addAll(lingModifiers);
+		allModifiers.addAll(numModifiers);
+		allModifiers.addAll(semModifiers);
+
+		for(String parentName : allModifiers){
 			//System.out.println(parentName);
 			ArrayList<Modifier> modifierList = new ArrayList<Modifier>();
 			for(OWLClass cls : this.getAllSubClasses(factory.getOWLClass(IRI.create(parentName)), false)){
@@ -570,6 +551,7 @@ public class DomainOntology {
 			}
 
 		}
+
 
 		return modifierMap;
 	}
@@ -583,14 +565,26 @@ public class DomainOntology {
 		return clsList;
 	}
 	
-	public ArrayList<Modifier> createPseudoDictionary(){
+	public ArrayList<Modifier> createPseudoModifierDictionary(){
 		ArrayList<Modifier> clsList = new ArrayList<Modifier>();
 		
-		for(OWLClass cls: this.getAllSubClasses((factory.getOWLClass(IRI.create(OntologyConstants.PSEUDO))), false)){
+		for(OWLClass cls: this.getAllSubClasses((factory.getOWLClass(IRI.create(OntologyConstants.PSEUDO_MODIFIER))),
+                false)){
 			clsList.add(new Modifier(cls.getIRI().toString(), this));
 		}
 		return clsList;
 	}
+
+	public ArrayList<Anchor> createPseudoAnchorDictionary(){
+        ArrayList<Anchor> clsList = new ArrayList<Anchor>();
+
+        for(OWLClass cls: this.getAllSubClasses((factory.getOWLClass(IRI.create(OntologyConstants.PSEUDO_ANCHOR))),
+                false)){
+            clsList.add(new Anchor(cls.getIRI().toString(), this));
+        }
+
+        return clsList;
+    }
 	
 	private void getObjectPropertyHierarchy(OWLObjectProperty prop, ArrayList<OWLObjectProperty> visitedProp, ArrayList<OWLObjectProperty> propList){
 		//make sure prop exists and hasn't already been visited
@@ -918,6 +912,9 @@ public class DomainOntology {
 		OWLClass cls = factory.getOWLClass(IRI.create(variable.getURI()));
 		OWLNamedIndividual indiv = factory.getOWLNamedIndividual(IRI.create(annotation.getUri()));
 		OWLClassAssertionAxiom axiom = factory.getOWLClassAssertionAxiom(cls, indiv);
+
+        //TODO: add all of the metadata associated with annotation to individual (span, doc, section, etc.)
+
 		manager.addAxiom(ontology, axiom);
 		manager.saveOntology(ontology);
 	}

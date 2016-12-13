@@ -30,9 +30,9 @@ public class testAPI {
 		}
 		
 		System.out.println("********** Anchor Dictionary: **********");
-		ArrayList<Term> anchorDictionary = domain.createAnchorDictionary();
-		for(Term term : anchorDictionary){
-			System.out.println(term.toString());
+		ArrayList<Anchor> anchorDictionary = domain.createAnchorDictionary();
+		for(Anchor anchor : anchorDictionary){
+			System.out.println(anchor.toString());
 		}
 		
 		System.out.println("********** Pseudo Dictionary: **********");

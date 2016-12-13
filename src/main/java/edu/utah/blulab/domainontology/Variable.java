@@ -49,13 +49,12 @@ public class Variable {
 	}
 
 	public String getVariableType(){
-		ArrayList<String> annTypes = domain.getEquivalentDataPropertyFiller((domain.getClass(uri)),
-				domain.getFactory().getOWLDataProperty(IRI.create(OntologyConstants.HAS_ANNOTATION_TYPE)));
-		if(annTypes.isEmpty()){
-			return "";
-		}else{
-			return annTypes.get(0);
-		}
+        String type = "";
+		ArrayList<OWLClassExpression> types = domain.getEquivalentObjectPropertyFillerList(domain.getClass(uri),
+                domain.getFactory().getOWLObjectProperty(IRI.create(OntologyConstants.HAS_ANNOTATION_TYPE)));
+        type = types.get(0).asOWLClass().getIRI().getShortForm();
+
+        return type;
 
 	}
 
@@ -76,26 +75,26 @@ public class Variable {
 		return types;
 	}
 	
-	public ArrayList<LogicExpression<Term>> getAnchor(){
-		ArrayList<LogicExpression<Term>> anchorList = new ArrayList<LogicExpression<Term>>();
+	public ArrayList<LogicExpression<Anchor>> getAnchor(){
+		ArrayList<LogicExpression<Anchor>> anchorList = new ArrayList<LogicExpression<Anchor>>();
 		ArrayList<OWLClassExpression>	 list = domain.getEquivalentObjectPropertyFillerList(domain.getClass(uri), 
 				domain.getFactory().getOWLObjectProperty(IRI.create(OntologyConstants.HAS_ANCHOR)));
 		for(OWLClassExpression cls : list){
 			if(!cls.isAnonymous()){
-				LogicExpression<Term> termExp = new LogicExpression<Term>("SINGLE");
-				termExp.add(new Term(cls.asOWLClass().getIRI().toString(), domain));
-				anchorList.add(termExp);
+				LogicExpression<Anchor> anchorExp = new LogicExpression<Anchor>("SINGLE");
+				anchorExp.add(new Anchor(cls.asOWLClass().getIRI().toString(), domain));
+				anchorList.add(anchorExp);
 			}else{
 				if(cls.getClassExpressionType().equals(ClassExpressionType.OBJECT_UNION_OF)){
-					LogicExpression<Term> termExp = new LogicExpression<Term>("OR");
+					LogicExpression<Anchor> anchorExp = new LogicExpression<Anchor>("OR");
 					OWLObjectUnionOf union = (OWLObjectUnionOf) cls;
 					List<OWLClassExpression> filler = union.getOperandsAsList();
 					for(OWLClassExpression c : filler){
 						if(!c.isAnonymous()){
-							termExp.add(new Term(c.asOWLClass().getIRI().toString(), domain));
+							anchorExp.add(new Anchor(c.asOWLClass().getIRI().toString(), domain));
 						}
 					}
-					anchorList.add(termExp);
+					anchorList.add(anchorExp);
 				}
 			}
 		}

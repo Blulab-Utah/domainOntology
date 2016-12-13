@@ -3,19 +3,13 @@ package edu.utah.blulab.domainontology;
 import java.util.*;
 
 import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.OWLAnnotation;
-import org.semanticweb.owlapi.model.OWLAnnotationProperty;
 import org.semanticweb.owlapi.model.OWLClass;
-import org.semanticweb.owlapi.model.OWLClassExpression;
-import org.semanticweb.owlapi.model.OWLDataFactory;
-import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
 
-public class Term {
+public class Anchor {
 	private String uri;
 	private DomainOntology domain;
 	
-	public Term(String clsURI, DomainOntology domain){
+	public Anchor(String clsURI, DomainOntology domain){
 		this.uri = clsURI;
 		this.domain = domain;
 	}
@@ -70,12 +64,12 @@ public class Term {
 				domain.getFactory().getOWLAnnotationProperty(IRI.create(OntologyConstants.SEMANTIC_TYPE)));
 	}
 	
-	public ArrayList<Term> getPseudos(){
-		ArrayList<Term> pseudos = new ArrayList<Term>();
+	public ArrayList<Anchor> getPseudos(){
+		ArrayList<Anchor> pseudos = new ArrayList<Anchor>();
 		ArrayList<OWLClass> pseudoList = domain.getObjectPropertyFillerList(domain.getClass(uri), 
 				domain.getFactory().getOWLObjectProperty(IRI.create(OntologyConstants.HAS_PSEUDO)));
 		for(OWLClass pseudo : pseudoList){
-			pseudos.add(new Term(pseudo.getIRI().toString(), domain));
+			pseudos.add(new Anchor(pseudo.getIRI().toString(), domain));
 		}
 		return pseudos;
 	}
@@ -85,25 +79,25 @@ public class Term {
 				domain.getFactory().getOWLAnnotationProperty(IRI.create(OntologyConstants.DEFINITION)));
 	}
 	
-	public ArrayList<Term> getDirectParents(){
-		ArrayList<Term> parents = new ArrayList<Term>();
+	public ArrayList<Anchor> getDirectParents(){
+		ArrayList<Anchor> parents = new ArrayList<Anchor>();
 		ArrayList<String> clsStrings = domain.getDirectSuperClasses(domain.getClass(uri));
 		for(String str : clsStrings){
 			if(!domain.getClass(str).asOWLClass().getIRI().getNamespace().equalsIgnoreCase(OntologyConstants.SO_PM+"#") &&
 					!domain.getClass(str).asOWLClass().getIRI().getNamespace().equalsIgnoreCase(OntologyConstants.CT_PM+"#")){
-				parents.add(new Term(str, domain));
+				parents.add(new Anchor(str, domain));
 			}
 		}
 		return parents;
 	}
 	
-	public ArrayList<Term> getDirectChildren(){
-		ArrayList<Term> children = new ArrayList<Term>();
+	public ArrayList<Anchor> getDirectChildren(){
+		ArrayList<Anchor> children = new ArrayList<Anchor>();
 		ArrayList<String> clsStrings = domain.getDirectSubClasses(domain.getClass(uri));
 		for(String str : clsStrings){
 			if(!domain.getClass(str).asOWLClass().getIRI().getNamespace().equalsIgnoreCase(OntologyConstants.SO_PM+"#") &&
 					!domain.getClass(str).asOWLClass().getIRI().getNamespace().equalsIgnoreCase(OntologyConstants.CT_PM+"#")){
-				children.add(new Term(str, domain));
+				children.add(new Anchor(str, domain));
 			}
 		}
 		return children;
@@ -121,7 +115,7 @@ public class Term {
 	
 	@Override
 	public String toString() {
-		return "Term [prefTerm=" + this.getPrefTerm() + ", prefCode=" + this.getPrefCode()
+		return "Anchor [prefTerm=" + this.getPrefTerm() + ", prefCode=" + this.getPrefCode()
 				+ ", ancestry= " + this.getClassPaths()
 				//+  ", synonym=" + this.getSynonym()
 				//+ ", misspelling=" + this.getMisspelling()//+ ", abbreviation="

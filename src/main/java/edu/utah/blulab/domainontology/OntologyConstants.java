@@ -61,7 +61,9 @@ public class OntologyConstants {
 	public static final String THERAPEUTIC_PROCEDURE = SO_PM + "#TherapeuticProcedure";
 	public static final String TARGET = SO_PM + "#Anchor";
 	public static final String CLOSURE = CT_PM + "#Closure";
-	public static final String PSEUDO = CT_PM + "#Pseudo";
+	public static final String PSEUDO_MODIFIER = CT_PM + "#PseudoModifier";
+	public static final String PSEUDO_ANCHOR = CT_PM + "#PseudoAnchor";
+	public static final String SECTION_TYPE = SO_PM + "DocumentSection";
 	
 	public static final String LINGUISTIC_MODIFIER = CT_PM + "#LinguisticModifier";
 	public static final String SEMANTIC_MODIFIER = CT_PM + "#SemanticModifier";
