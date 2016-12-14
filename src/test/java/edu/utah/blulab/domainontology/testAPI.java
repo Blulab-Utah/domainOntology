@@ -34,7 +34,7 @@ public class testAPI {
 		}**/
 
 		System.out.println("********** Modifier Map: **********");
-		HashMap<String, ArrayList<Modifier>> modifierMap = domain.createModifierMap();
+		HashMap<String, ArrayList<Modifier>> modifierMap = domain.createModifierTypeMap();
 		Iterator iterator = modifierMap.entrySet().iterator();
 		while (iterator.hasNext()){
 			Map.Entry<String, ArrayList<Modifier>> modifierEntry =

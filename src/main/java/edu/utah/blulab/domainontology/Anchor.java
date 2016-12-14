@@ -9,7 +9,11 @@ public class Anchor {
 	private String uri;
 	private DomainOntology domain;
 	
-	public Anchor(String clsURI, DomainOntology domain){
+	public Anchor(){
+    }
+
+
+    public Anchor(String clsURI, DomainOntology domain){
 		this.uri = clsURI;
 		this.domain = domain;
 	}
@@ -112,17 +116,18 @@ public class Anchor {
 	public List<ClassPath> getClassPaths(){
 		return domain.getRootClassPaths(domain.getClass(uri));
 	}
+
 	
 	@Override
 	public String toString() {
 		return "Anchor [prefTerm=" + this.getPrefTerm() + ", prefCode=" + this.getPrefCode()
-				+ ", ancestry= " + this.getClassPaths()
+				//+ ", ancestry= " + this.getClassPaths()
 				//+  ", synonym=" + this.getSynonym()
 				//+ ", misspelling=" + this.getMisspelling()//+ ", abbreviation="
 				//+ ", semanticType=" + this.getSemanticType()
 				//+ this.getAbbreviation() + ", subjExp=" + this.getSubjExp() + ", regex=" + this.getRegex()
 				//+ ", altCode=" + this.getAltCode()
-				//+ ", pseudos=" + this.getPseudos()
+				+ ", pseudos=" + this.getPseudos()
 				//+ "\n\tPARENTS:  " + this.getAllParents()
 				+ "]";
 	}

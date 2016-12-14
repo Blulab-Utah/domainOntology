@@ -52,7 +52,11 @@ public class Variable {
         String type = "";
 		ArrayList<OWLClassExpression> types = domain.getEquivalentObjectPropertyFillerList(domain.getClass(uri),
                 domain.getFactory().getOWLObjectProperty(IRI.create(OntologyConstants.HAS_ANNOTATION_TYPE)));
-        type = types.get(0).asOWLClass().getIRI().getShortForm();
+
+        if(!types.isEmpty()){
+            type = types.get(0).asOWLClass().getIRI().getShortForm();
+        }
+
 
         return type;
 
@@ -206,11 +210,11 @@ public class Variable {
 		return "Variable [varID=" + this.getVarID() + ", varName=" + this.getVarName()
 				//+ ", category=" + this.getSemanticCategory()
 				//+ ", parentAncestry=" + this.getAllParents()
-				+ ", ancestry= " + this.getClassPaths()
+				//+ ", ancestry= " + this.getClassPaths()
 				+ ", type= " + this.getVariableType()
-				+ ", concept=" + this.getAnchor().toString() 
-				//+ "\n\t, modifiers=" + this.getModifiers()
-				//+ "\n\t, numerics=" + this.getNumericModifiers()
+				+ ", anchor=" + this.getAnchor().toString()
+				+ "\n\t, modifiers=" + this.getModifiers()
+				+ "\n\t, numerics=" + this.getNumericModifiers()
 				//+ "\n\t, relations=" + this.getRelationships()
 				+"]";
 	}

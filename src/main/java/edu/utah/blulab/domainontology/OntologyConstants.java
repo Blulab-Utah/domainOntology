@@ -44,7 +44,7 @@ public class OntologyConstants {
 	public static final String DISCONTINUOUS_ACTION = "discontinuous";
 	public static final String TERMINATE_ACTION = "terminate";
 	
-	public static final String ANNOTATION = SO_PM + "#Annotation";
+	public static final String ANNOTATION = SO_PM + "#AnnotationOntology";
 	public static final String EVENT = SO_PM + "#Event";
 	public static final String ENTITY = SO_PM + "#Entity";
 	public static final String PATIENT = SO_PM + "#Patient";
@@ -59,7 +59,7 @@ public class OntologyConstants {
 	public static final String PROCEDURE = SO_PM + "#Procedure";
 	public static final String DIAGNOSTIC_PROCEDURE = SO_PM + "#DiagnosticProcedure";
 	public static final String THERAPEUTIC_PROCEDURE = SO_PM + "#TherapeuticProcedure";
-	public static final String TARGET = SO_PM + "#Anchor";
+	public static final String ANCHOR = SO_PM + "#Anchor";
 	public static final String CLOSURE = CT_PM + "#Closure";
 	public static final String PSEUDO_MODIFIER = CT_PM + "#PseudoModifier";
 	public static final String PSEUDO_ANCHOR = CT_PM + "#PseudoAnchor";
@@ -74,4 +74,13 @@ public class OntologyConstants {
 	public static final String HAS_ANNOTATION_TYPE = SO_PM + "#hasAnnotationType";
 	public static final String HAS_DOCUMENT_ID = SO_PM + "#hasDocumentID";
 	public static final String HAS_SPAN = SO_PM + "#hasSpan";
+
+	public static final String COMPOUND_ANCHOR = SO_PM + "#CompoundAnchor";
+	public static final String HAS_COMPOUND_ARGUMENT = SO_PM + "#hasCompoundArgument";
+	public static final String HAS_COMPOUND_ARGUMENT1 = SO_PM + "#hasCompoundArgument1";
+	public static final String HAS_COMPOUND_ARGUMENT2 = SO_PM + "#hasCompoundArgument2";
+	public static final String HAS_COMPOUND_ARGUMENT3 = SO_PM + "#hasCompoundArgument3";
+	public static final String HAS_COMPOUND_ARGUMENT4 = SO_PM + "#hasCompoundArgument4";
+	public static final String HAS_COMPOUND_ARGUMENT5 = SO_PM + "#hasCompoundArgument5";
+
 }
