@@ -512,26 +512,24 @@ public class DomainOntology {
 	    OWLAnnotationAssertionAxiom annotationAssertionAxiom = factory.getOWLAnnotationAssertionAxiom(cls.getIRI(),
                 annotation);
 	    manager.addAxiom(ontology, annotationAssertionAxiom);
+	    manager.saveOntology(ontology);
     }
 
     public void setAnnotationList(OWLNamedIndividual ind, OWLAnnotationProperty annotationProperty, ArrayList<String> list)
             throws Exception{
         for(String item : list){
-            OWLLiteral literal = factory.getOWLLiteral(item);
-            OWLAnnotation annotation = factory.getOWLAnnotation(annotationProperty, literal);
-            OWLAnnotationAssertionAxiom annotationAssertionAxiom = factory.getOWLAnnotationAssertionAxiom(ind.getIRI(),
-                    annotation);
-            manager.addAxiom(ontology, annotationAssertionAxiom);
+            this.setAnnotation(ind, annotationProperty, item);
         }
-        manager.saveOntology(ontology);
     }
 
-    public void setAnnotation(OWLNamedIndividual ind, OWLAnnotationProperty annotationProperty, String item){
+    public void setAnnotation(OWLNamedIndividual ind, OWLAnnotationProperty annotationProperty, String item) throws
+            Exception{
         OWLLiteral literal = factory.getOWLLiteral(item);
         OWLAnnotation annotation = factory.getOWLAnnotation(annotationProperty, literal);
         OWLAnnotationAssertionAxiom annotationAssertionAxiom = factory.getOWLAnnotationAssertionAxiom(ind.getIRI(),
                 annotation);
         manager.addAxiom(ontology, annotationAssertionAxiom);
+        manager.saveOntology(ontology);
     }
 
     public void createClass(String classURI, String parentURI) throws Exception{
@@ -542,6 +540,15 @@ public class DomainOntology {
 	    manager.addAxiom(ontology, subclassAxiom);
 	    manager.saveOntology(ontology);
 
+    }
+
+    public void createIndividual(String indURI, String clsURI) throws Exception{
+	    OWLNamedIndividual individual = factory.getOWLNamedIndividual(IRI.create(indURI));
+	    OWLClass cls = factory.getOWLClass(IRI.create(clsURI));
+
+	    OWLClassAssertionAxiom classAssertionAxiom = factory.getOWLClassAssertionAxiom(cls, individual);
+	    manager.addAxiom(ontology, classAssertionAxiom);
+	    manager.saveOntology(ontology);
     }
 
     public void saveDomainOntology() throws Exception{

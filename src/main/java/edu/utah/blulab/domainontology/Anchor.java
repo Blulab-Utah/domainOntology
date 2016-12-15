@@ -26,6 +26,11 @@ public class Anchor {
 		return domain.getAnnotationString(domain.getClass(uri), 
 				domain.getFactory().getOWLAnnotationProperty(IRI.create(OntologyConstants.PREF_LABEL)));
 	}
+
+	public void setPrefTerm(String prefTerm) throws Exception{
+		domain.setAnnotation(domain.getClass(uri),
+				domain.getFactory().getOWLAnnotationProperty(IRI.create(OntologyConstants.PREF_LABEL)), prefTerm);
+	}
 	
 	public String getPrefCode() {
 		return domain.getAnnotationString(domain.getClass(uri), 
