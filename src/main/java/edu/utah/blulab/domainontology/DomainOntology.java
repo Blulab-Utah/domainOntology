@@ -551,6 +551,27 @@ public class DomainOntology {
 	    manager.saveOntology(ontology);
     }
 
+    public void setObjectProperty(LogicExpression<String> propValues, OWLClass cls, OWLObjectProperty prop) throws
+            Exception{
+        if(propValues.isSingleExpression()){
+            OWLClass valueClass = factory.getOWLClass(IRI.create(propValues.get(0)));
+            OWLObjectSomeValuesFrom someValuesFrom = factory.getOWLObjectSomeValuesFrom(prop, valueClass);
+            OWLAxiom hasPropAxiom = factory.getOWLSubClassOfAxiom(cls, someValuesFrom);
+            manager.addAxiom(ontology, hasPropAxiom);
+            manager.saveOntology(ontology);
+        }else if(propValues.isOrExpression()){
+            Set<OWLClassExpression> values = new HashSet<OWLClassExpression>();
+            for(String str : propValues){
+                OWLClass valueClass = factory.getOWLClass(IRI.create(str));
+                values.add(valueClass);
+            }
+            OWLObjectUnionOf union = factory.getOWLObjectUnionOf(values);
+            OWLAxiom unionAxiom = factory.getOWLSubClassOfAxiom(cls, union);
+            manager.addAxiom(ontology, unionAxiom);
+            manager.saveOntology(ontology);
+        }
+    }
+
     public void saveDomainOntology() throws Exception{
 	    manager.saveOntology(ontology);
     }
