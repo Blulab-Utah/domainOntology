@@ -583,6 +583,10 @@ public class DomainOntology {
 
         return newAnchor;
     }
+
+    public Anchor createAnchor(String anchorURI) throws Exception{
+	    return this.createAnchor(anchorURI, OntologyConstants.ANCHOR);
+    }
 	
 	public ArrayList<String> getAnnotationStringList(OWLIndividual ind, OWLAnnotationProperty annotationProperty, String lang){
 		ArrayList<String> list = new ArrayList<String>();

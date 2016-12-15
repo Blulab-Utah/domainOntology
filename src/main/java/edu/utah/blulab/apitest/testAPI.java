@@ -1,6 +1,7 @@
 package edu.utah.blulab.apitest;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import edu.utah.blulab.domainontology.*;
 
@@ -14,8 +15,13 @@ public class testAPI {
 		}
 		DomainOntology domain = new DomainOntology(args[0], bool);
 
+        Anchor test1 = domain.createAnchor(domain.getDomainURI()+"#Test2");
+        test1.setPrefTerm("prefTerm2");
+        test1.setPrefCode("C999998");
+        test1.setAltCode(new ArrayList<String>(Arrays.asList("C000001")));
+        test1.setSynonym(new ArrayList<String>(Arrays.asList("syn1B", "syn2B", "syn3B")));
 
-		
+
 		/*ArrayList<Variable> domainVariables = domain.getAllVariables();
 		System.out.println("********** Domain Variables: **********");
 		for(Variable var : domainVariables){
