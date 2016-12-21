@@ -137,7 +137,7 @@ public class Modifier {
 	@Override
 	public String toString() {
 		return "\n\tModifier: " + this.getModName() + ", uri=" + uri
-				+ ", ancestry= " + this.getClassPaths()
+				//+ ", ancestry= " + this.getClassPaths()
 				//+ ", items=" + this.getItems()
 				//+ "\n\t\t Pseudos=" + this.getPseudos()
 				//+ "\n\t\t Closures=" + this.getClosures()
