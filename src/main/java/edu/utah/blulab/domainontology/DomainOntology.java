@@ -322,6 +322,7 @@ public class DomainOntology {
 	public ArrayList<String> getDataPropertyFiller(OWLClass cls, OWLDataProperty prop){
 		ArrayList<String> filler = new ArrayList<String>();
 		Set<OWLClassExpression> subclassExp = cls.getSuperClasses(ontology);
+		subclassExp.addAll(cls.getEquivalentClasses(ontology));
 		for(OWLClassExpression sub : subclassExp){
 			if(sub.getClassExpressionType().equals(ClassExpressionType.DATA_SOME_VALUES_FROM)){
 				//System.out.println(sub.toString());
@@ -334,10 +335,52 @@ public class DomainOntology {
 						//System.out.println("Facet: " + facet.getFacet().toString() + " Value: " + facet.getFacetValue().toString());
 						String temp = "";
 						if(facet.getFacet().equals(OWLFacet.MIN_INCLUSIVE)){
-							temp = temp + ">=" + facet.getFacetValue().parseFloat();
+							temp = temp + ">=";
+							if(facet.getFacetValue().isFloat()){
+								temp = temp + facet.getFacetValue().parseFloat();
+							}
+							if(facet.getFacetValue().isDouble()){
+								temp = temp + facet.getFacetValue().parseDouble();
+							}
+							if(facet.getFacetValue().isInteger()){
+								temp = temp + facet.getFacetValue().parseInteger();
+							}
+						}
+						if(facet.getFacet().equals(OWLFacet.MIN_EXCLUSIVE)){
+							temp = temp + ">";
+							if(facet.getFacetValue().isFloat()){
+								temp = temp + facet.getFacetValue().parseFloat();
+							}
+							if(facet.getFacetValue().isDouble()){
+								temp = temp + facet.getFacetValue().parseDouble();
+							}
+							if(facet.getFacetValue().isInteger()){
+								temp = temp + facet.getFacetValue().parseInteger();
+							}
 						}
 						if(facet.getFacet().equals(OWLFacet.MAX_INCLUSIVE)){
-							temp = temp + "<=" + facet.getFacetValue().parseFloat();
+							temp = temp + "<=";
+							if(facet.getFacetValue().isFloat()){
+								temp = temp + facet.getFacetValue().parseFloat();
+							}
+							if(facet.getFacetValue().isDouble()){
+								temp = temp + facet.getFacetValue().parseDouble();
+							}
+							if(facet.getFacetValue().isInteger()){
+								temp = temp + facet.getFacetValue().parseInteger();
+							}
+						}
+						if(facet.getFacet().equals(OWLFacet.MAX_EXCLUSIVE)){
+							temp = temp + "<";
+							if(facet.getFacetValue().isFloat()){
+								temp = temp + facet.getFacetValue().parseFloat();
+							}
+							if(facet.getFacetValue().isDouble()){
+								temp = temp + facet.getFacetValue().parseDouble();
+							}
+							if(facet.getFacetValue().isInteger()){
+								temp = temp + facet.getFacetValue().parseInteger();
+							}
 						}
 						//System.out.println(temp);
 						filler.add(temp);

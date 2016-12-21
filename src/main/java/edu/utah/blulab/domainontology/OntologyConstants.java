@@ -37,6 +37,13 @@ public class OntologyConstants {
 	public static final String HAS_ANCHOR = SO_PM + "#hasAnchor";
 	
 	public static final String HAS_QUANTITY_VALUE = SO_PM + "#hasQuantityValue";
+	public static final String HAS_LOW_VALUE = SO_PM + "#hasLowValue";
+	public static final String HAS_HIGH_VALUE = SO_PM + "#hasHighValue";
+	public static final String HAS_NUMERATOR = SO_PM + "#hasNumeratorValue";
+	public static final String HAS_DENOMINATOR = SO_PM + "#hasDenominatorValue";
+	public static final String HAS_1DIMENSION = SO_PM + "#has1DimensionValue";
+	public static final String HAS_2DIMENSION = SO_PM + "#has2DimensionValue";
+	public static final String HAS_3DIMENSION = SO_PM + "#has3DimensionValue";
 	
 	public static final String FORWARD_ACTION = "forward";
 	public static final String BACKWARD_ACTION = "backward";
