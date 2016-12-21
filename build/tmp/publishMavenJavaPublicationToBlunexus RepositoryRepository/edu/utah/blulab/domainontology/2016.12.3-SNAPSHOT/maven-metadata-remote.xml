@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>edu.utah.blulab</groupId>
+  <artifactId>domainontology</artifactId>
+  <version>2016.12.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20161214.180536</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20161214180536</lastUpdated>
+  </versioning>
+</metadata>
