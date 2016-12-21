@@ -418,7 +418,7 @@ NCI: The final section of the small intestine. (NCI)</SchemaOntology:definition>
         <SchemaOntology:abbrLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IBD</SchemaOntology:abbrLabel>
         <SchemaOntology:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inflammatory Bowel Diseases</SchemaOntology:altLabel>
         <SchemaOntology:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI: A spectrum of small and large bowel inflammatory diseases of unknown etiology. It includes Crohn&apos;s disease, ulcerative colitis, and colitis of indeterminate type.
-NCI: A general term that refers to the inflammation of the colon and rectum. Inflammatory bowel disease includes ulcerative colitis and Crohn&apos;s disease.</SchemaOntology:definition>
+NCI: A general anchor that refers to the inflammation of the colon and rectum. Inflammatory bowel disease includes ulcerative colitis and Crohn&apos;s disease.</SchemaOntology:definition>
         <SchemaOntology:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bowel disease inflammatory</SchemaOntology:altLabel>
         <SchemaOntology:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bowel diseases inflammatory</SchemaOntology:altLabel>
         <SchemaOntology:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chronic inflammatory bowel disease</SchemaOntology:prefLabel>
