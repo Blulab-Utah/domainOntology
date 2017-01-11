@@ -9,6 +9,9 @@ import sun.rmi.runtime.Log;
 public class Modifier {
 	private String uri;
 	private DomainOntology domain;
+	public final static String LINGUISTIC = "Linguistic";
+	public final static String SEMANTIC = "Semantic";
+	public final static String NUMERIC = "Numeric";
 	
 	
 	public Modifier(String clsURI, DomainOntology domain){
@@ -16,7 +19,23 @@ public class Modifier {
 		this.domain = domain;
 	}
 	
-	
+	public String getModifierType(){
+		String type = "";
+
+		for(ClassPath path : this.getClassPaths()){
+			if(path.contains(domain.getClass(OntologyConstants.LINGUISTIC_MODIFIER))){
+				return LINGUISTIC;
+			}else if(path.contains(domain.getClass(OntologyConstants.NUMERIC_MODIFIER))){
+				return NUMERIC;
+			}else if(path.contains(domain.getClass(OntologyConstants.SEMANTIC_MODIFIER))){
+				return SEMANTIC;
+			}
+		}
+
+		return type;
+	}
+
+
 	public String getModName() {
 		return domain.getClass(uri).getIRI().getShortForm();
 	}
@@ -137,6 +156,8 @@ public class Modifier {
 	@Override
 	public String toString() {
 		return "\n\tModifier: " + this.getModName() + ", uri=" + uri
+				+ ", type= " + this.getModifierType()
+				+ ", classPath= " + this.getClassPaths()
 				//+ ", ancestry= " + this.getClassPaths()
 				//+ ", items=" + this.getItems()
 				//+ "\n\t\t Pseudos=" + this.getPseudos()

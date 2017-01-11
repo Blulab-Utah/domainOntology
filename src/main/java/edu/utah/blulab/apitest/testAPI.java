@@ -2,6 +2,9 @@ package edu.utah.blulab.apitest;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 import edu.utah.blulab.domainontology.*;
 
@@ -15,11 +18,11 @@ public class testAPI {
 		}
 		DomainOntology domain = new DomainOntology(args[0], bool);
 
-        Anchor test1 = domain.createAnchor(domain.getDomainURI()+"#Test2");
+        /*Anchor test1 = domain.createAnchor(domain.getDomainURI()+"#Test2");
         test1.setPrefTerm("prefTerm2");
         test1.setPrefCode("C999998");
         test1.setAltCode(new ArrayList<String>(Arrays.asList("C000001")));
-        test1.setSynonym(new ArrayList<String>(Arrays.asList("syn1B", "syn2B", "syn3B")));
+        test1.setSynonym(new ArrayList<String>(Arrays.asList("syn1B", "syn2B", "syn3B")));*/
 
 
 		/*ArrayList<Variable> domainVariables = domain.getAllVariables();
@@ -30,11 +33,11 @@ public class testAPI {
 
         //AnnotationOntology annotationOntology = new AnnotationOntology(domain);
 
-		System.out.println("********** Compound Anchor Dictionary: **********");
+		/*System.out.println("********** Compound Anchor Dictionary: **********");
 		ArrayList<CompoundAnchor> compoundAnchorDictionary = domain.createCompoundAnchorDictionary();
 		for(CompoundAnchor anchor : compoundAnchorDictionary){
 			System.out.println(anchor.toString());
-		}
+		}*/
 
 
 		/*System.out.println("********** Modifier Dictionary: **********");
@@ -43,13 +46,13 @@ public class testAPI {
 			System.out.println(modifier.toString());
 		}
 		
-		System.out.println("********** Anchor Dictionary: **********");
+		/*System.out.println("********** Anchor Dictionary: **********");
 		ArrayList<Anchor> anchorDictionary = domain.createAnchorDictionary();
 		for(Anchor anchor : anchorDictionary){
 			System.out.println(anchor.toString());
 		}
 
-		System.out.println("********** PseudoAnchor Dictionary: **********");
+		/*System.out.println("********** PseudoAnchor Dictionary: **********");
 		ArrayList<Anchor> pseudoAnchorDictionary = domain.createPseudoAnchorDictionary();
 		for(Anchor term : pseudoAnchorDictionary){
 			System.out.println(term.toString());
@@ -65,7 +68,9 @@ public class testAPI {
 		ArrayList<Modifier> closureDictionary = domain.createClosureDictionary();
 		for(Modifier term : closureDictionary){
 			System.out.println(term.toString());
-		}
+		}*/
+
+
 
 		System.out.println("********** Modifier Type Map: **********");
 		HashMap<String, ArrayList<Modifier>> modifierMap = domain.createModifierTypeMap();
@@ -78,7 +83,7 @@ public class testAPI {
 				System.out.print(modifier.getModName() + "  ");
 			}
 			System.out.println("");
-		}*/
+		}
 	}
 
 

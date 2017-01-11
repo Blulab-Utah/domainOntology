@@ -3,6 +3,7 @@ package edu.utah.blulab.domainontology;
 import java.io.File;
 import java.util.*;
 
+import com.sun.media.sound.ModelIdentifier;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
@@ -84,10 +85,18 @@ public class DomainOntology {
         
 	}
 
+    /**
+     * Gets the file location of the domain ontology
+     * @return File of domain ontology
+     */
 	public File getOntFile(){
         return ontFile;
     }
 
+    /**
+     * Gets the OWLOntology object representing a domain ontology
+     * @return OWLOntology representing a domain ontology
+     */
     public OWLOntology getOntology(){
         return ontology;
     }
@@ -136,17 +145,31 @@ public class DomainOntology {
 		propList.addAll(semPropList);
 		return propList;
 	}
-	
+
+    /**
+     * Gets a Variable object given the short form of a Class URI
+     * @param clsDisplayName The short form of a class URI.
+     * @return A variable object representing the clsDisplayName
+     */
 	public Variable getVariable(String clsDisplayName){
 		String domainURI = ontology.getOntologyID().getOntologyIRI().toString();
 		//System.out.println(domainURI);
 		return new Variable(domainURI + "#" +clsDisplayName, this);
 	}
-	
+
+    /**
+     * Gets a Variable object given an OWLClass
+     * @param cls The OWL class representing the variable
+     * @return A variable object corresponding to the OWL class variable
+     */
 	public Variable getVariable(OWLClass cls){
 		return new Variable(cls.getIRI().toString(), this);
 	}
-	
+
+    /**
+     * Gets a list of all variables in a domain ontology
+     * @return List of Variable objects representing all variables in a domain ontology
+     */
 	public ArrayList<Variable> getAllVariables() {
 		ArrayList<Variable> variables = new ArrayList<Variable>();
 		ArrayList<OWLClass> elements = new ArrayList<OWLClass>();
@@ -328,7 +351,8 @@ public class DomainOntology {
 				//System.out.println(sub.toString());
 				OWLDataSomeValuesFrom axiom = (OWLDataSomeValuesFrom) sub;
 				//System.out.println("This is Filler: " + axiom.getFiller() + " Type: " + axiom.getFiller().getDataRangeType());
-				if(axiom.getFiller().getDataRangeType().equals(DataRangeType.DATATYPE_RESTRICTION)){
+				if(axiom.getFiller().getDataRangeType().equals(DataRangeType.DATATYPE_RESTRICTION)
+                        && axiom.getProperty().equals(prop)){
 					OWLDatatypeRestriction dataRestriction = (OWLDatatypeRestriction) axiom.getFiller();
 					Set<OWLFacetRestriction> facets = dataRestriction.getFacetRestrictions();
 					for(OWLFacetRestriction facet : facets){
@@ -683,30 +707,23 @@ public class DomainOntology {
 
 	public HashMap<String, ArrayList<Modifier>> createModifierTypeMap() throws Exception{
 		HashMap<String, ArrayList<Modifier>> modifierMap = new HashMap<String, ArrayList<Modifier>>();
-		ArrayList<String> lingModifiers = this.getDirectSubClasses(
-				factory.getOWLClass(IRI.create(OntologyConstants.LINGUISTIC_MODIFIER)));
-		ArrayList<String> numModifiers = this.getDirectSubClasses(
-				factory.getOWLClass(IRI.create(OntologyConstants.NUMERIC_MODIFIER)));
-		ArrayList<String> semModifiers = this.getDirectSubClasses(
-				factory.getOWLClass(IRI.create(OntologyConstants.SEMANTIC_MODIFIER)));
+		ArrayList<Modifier> linguistic = new ArrayList<Modifier>();
+		ArrayList<Modifier> semantic = new ArrayList<Modifier>();
+		ArrayList<Modifier> numeric = new ArrayList<Modifier>();
 
-		ArrayList<String> allModifiers = new ArrayList<String>();
-		allModifiers.addAll(lingModifiers);
-		allModifiers.addAll(numModifiers);
-		allModifiers.addAll(semModifiers);
-
-		for(String parentName : allModifiers){
-			//System.out.println(parentName);
-			ArrayList<Modifier> modifierList = new ArrayList<Modifier>();
-			for(OWLClass cls : this.getAllSubClasses(factory.getOWLClass(IRI.create(parentName)), false)){
-				modifierList.add(new Modifier(cls.getIRI().toString(), this));
+		for(Modifier mod : this.createModifierDictionary()){
+			if(mod.getModifierType().equals(Modifier.LINGUISTIC)){
+				linguistic.add(mod);
+			}else if (mod.getModifierType().equals(Modifier.SEMANTIC)){
+				semantic.add(mod);
+			}else if (mod.getModifierType().equals(Modifier.NUMERIC)){
+				numeric.add(mod);
 			}
-			if(!modifierList.isEmpty()){
-				modifierMap.put(parentName, modifierList);
-			}
-
 		}
 
+		modifierMap.put(Modifier.LINGUISTIC, linguistic);
+		modifierMap.put(Modifier.SEMANTIC, semantic);
+		modifierMap.put(Modifier.NUMERIC, numeric);
 
 		return modifierMap;
 	}
@@ -1093,6 +1110,7 @@ public class DomainOntology {
             getPath(parents.get(0), path, paths);
         }
     }
+
 
     public static List<ClassPath> getRootClassPaths(OWLClass cls){
         if(cls != null){

@@ -44,6 +44,10 @@ public class OntologyConstants {
 	public static final String HAS_1DIMENSION = SO_PM + "#has1DimensionValue";
 	public static final String HAS_2DIMENSION = SO_PM + "#has2DimensionValue";
 	public static final String HAS_3DIMENSION = SO_PM + "#has3DimensionValue";
+	public static final String QUANTITY = CT_PM + "#Quantity";
+	public static final String RANGE = CT_PM + "#RangeModifier";
+	public static final String DIMENSION = CT_PM + "#DimensionalMeasurement";
+	public static final String RATIO = CT_PM + "#Ratio";
 	
 	public static final String FORWARD_ACTION = "forward";
 	public static final String BACKWARD_ACTION = "backward";
@@ -75,6 +79,7 @@ public class OntologyConstants {
 	public static final String LINGUISTIC_MODIFIER = CT_PM + "#LinguisticModifier";
 	public static final String SEMANTIC_MODIFIER = CT_PM + "#SemanticModifier";
 	public static final String NUMERIC_MODIFIER = CT_PM + "#NumericModifier";
+	public static final String UNIT = CT_PM + "#Unit";
 
 
 	public static final String HAS_CORPUS = SO_PM + "#hasCorpus";

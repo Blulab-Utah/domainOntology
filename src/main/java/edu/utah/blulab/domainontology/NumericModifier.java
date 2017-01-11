@@ -13,6 +13,7 @@ public class NumericModifier extends Modifier {
 	public final String RANGE = "RangeModifier";
 	public final String RATIO = "Ratio";
 	public final String DIMENSIONAL = "DimensionalMeasurement";
+	public final String UNIT = "Unit";
 	
 	public NumericModifier(String clsURI, DomainOntology domain) {
 		super(clsURI, domain);
@@ -20,20 +21,22 @@ public class NumericModifier extends Modifier {
 		this.uri = clsURI;
 		
 		//set type
-		ArrayList<String> parents = domain.getDirectSuperClasses(domain.getFactory().getOWLClass(IRI.create(clsURI)));
-		for(String str : parents){
+		for(ClassPath path : this.getClassPaths()){
 			//System.out.println(domain.getFactory().getOWLClass(IRI.create(str)).getIRI().getShortForm());
-			if(domain.getFactory().getOWLClass(IRI.create(str)).getIRI().getShortForm().equalsIgnoreCase(QUANTITY)){
+			if(path.contains(domain.getClass(OntologyConstants.QUANTITY))){
 				type= QUANTITY;
 			}
-			if(domain.getFactory().getOWLClass(IRI.create(str)).getIRI().getShortForm().equalsIgnoreCase(RANGE)){
+			if(path.contains(domain.getClass(OntologyConstants.RANGE))){
 				type= RANGE;
 			}
-			if(domain.getFactory().getOWLClass(IRI.create(str)).getIRI().getShortForm().equalsIgnoreCase(RATIO)){
+			if(path.contains(domain.getClass(OntologyConstants.RATIO))){
 				type= RATIO;
 			}
-			if(domain.getFactory().getOWLClass(IRI.create(str)).getIRI().getShortForm().equalsIgnoreCase(DIMENSIONAL)){
+			if(path.contains(domain.getClass(OntologyConstants.DIMENSION))){
 				type= DIMENSIONAL;
+			}
+			if(path.contains(domain.getClass(OntologyConstants.UNIT))){
+				type = UNIT;
 			}
 		}
 	}
@@ -147,6 +150,8 @@ public class NumericModifier extends Modifier {
 
 		return values;
 	}
+
+
 
 	
 	public String toString(){
