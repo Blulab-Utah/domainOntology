@@ -14,7 +14,7 @@ public class DomainOntologyTest {
 	public void test() throws Exception {
 		// Melissa: find various ways of reading in and writing back out (to a string) the test ontology, then comparing the results
 		//fail("Not yet implemented");
-		/*DomainOntology domain = new DomainOntology("src/main/resources/colonoscopy_20141001.owl");
+		/*DomainOntology domain = new DomainOntology("src/main/resources/colonoscopyQuality.owl");
 		
 		ArrayList<Variable> domainVariables = domain.getAllVariables();
 		//System.out.println("********** Domain Variables: **********");
