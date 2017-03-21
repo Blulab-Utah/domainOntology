@@ -6,10 +6,10 @@ import java.util.Arrays;
 @SuppressWarnings("serial")
 public class LogicExpression<E> extends ArrayList<E> {
 	private String type;
-	public final String AND = "AND";
-	public final String OR = "OR";
-	public final String COMPLEMENT = "COMPLEMENT";
-	public final String SINGLE = "SINGLE";
+	public static final String AND = "AND";
+	public static final String OR = "OR";
+	public static final String COMPLEMENT = "COMPLEMENT";
+	public static final String SINGLE = "SINGLE";
 	
 	public LogicExpression(String type){
 		super();
@@ -27,7 +27,7 @@ public class LogicExpression<E> extends ArrayList<E> {
 	public void setType(String type){
 		this.type = type;
 	}
-	
+
 	public boolean isAndExpression(){
 		if(type.equalsIgnoreCase(AND)){
 			return true;

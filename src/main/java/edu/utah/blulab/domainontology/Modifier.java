@@ -1,9 +1,6 @@
 package edu.utah.blulab.domainontology;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
@@ -12,6 +9,9 @@ import sun.rmi.runtime.Log;
 public class Modifier {
 	private String uri;
 	private DomainOntology domain;
+	public final static String LINGUISTIC = "Linguistic";
+	public final static String SEMANTIC = "Semantic";
+	public final static String NUMERIC = "Numeric";
 	
 	
 	public Modifier(String clsURI, DomainOntology domain){
@@ -19,7 +19,23 @@ public class Modifier {
 		this.domain = domain;
 	}
 	
-	
+	public String getModifierType(){
+		String type = "";
+
+		for(ClassPath path : this.getClassPaths()){
+			if(path.contains(domain.getClass(OntologyConstants.LINGUISTIC_MODIFIER))){
+				return LINGUISTIC;
+			}else if(path.contains(domain.getClass(OntologyConstants.NUMERIC_MODIFIER))){
+				return NUMERIC;
+			}else if(path.contains(domain.getClass(OntologyConstants.SEMANTIC_MODIFIER))){
+				return SEMANTIC;
+			}
+		}
+
+		return type;
+	}
+
+
 	public String getModName() {
 		return domain.getClass(uri).getIRI().getShortForm();
 	}
@@ -117,20 +133,39 @@ public class Modifier {
 		return defaultDef;
 	}
 
+	public ArrayList<String> getAllChildren(){
+		ArrayList<String> childDescendents = new ArrayList<String>();
+		ArrayList<OWLClass> allChildren = domain.getAllSubClasses(domain.getClass(uri), false);
+		for(OWLClass cls : allChildren){
+			childDescendents.add(cls.getIRI().toString());
+		}
+
+		return childDescendents;
+	}
+
 	public ArrayList<String> getAllParents(){
 		ArrayList<String> parentAncestry = new ArrayList<String>();
 		parentAncestry = domain.getAllSuperClasses(domain.getClass(uri), false);
 		return parentAncestry;
 	}
+
+	public List<ClassPath> getClassPaths(){
+		return domain.getRootClassPaths(domain.getClass(uri));
+	}
 	
 	@Override
 	public String toString() {
 		return "\n\tModifier: " + this.getModName() + ", uri=" + uri
+				+ ", type= " + this.getModifierType()
+				+ ", classPath= " + this.getClassPaths()
+				//+ ", ancestry= " + this.getClassPaths()
 				//+ ", items=" + this.getItems()
 				//+ "\n\t\t Pseudos=" + this.getPseudos()
 				//+ "\n\t\t Closures=" + this.getClosures()
-				+ ", isDefault? " + this.isDefault()
-				+ ", Default Definiton = " + this.getDefaultDefintion()
+				//+ ", isDefault? " + this.isDefault()
+				//+ ", Default Definiton = " + this.getDefaultDefintion()
+				//+ "\n\tPARENTS: " + this.getAllParents()
+				//+ "\n\tCHILDREN: " + this.getAllChildren()
 				+ "]";
 	}
 	

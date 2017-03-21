@@ -1,15 +1,12 @@
 package edu.utah.blulab.domainontology;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
+import com.sun.media.sound.ModelIdentifier;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
-import org.semanticweb.owlapi.util.DefaultPrefixManager;
 import org.semanticweb.owlapi.vocab.OWLFacet;
 
 public class DomainOntology {
@@ -45,7 +42,8 @@ public class DomainOntology {
 		schemaClassList = this.getSchemaClasses();
 		
 		ArrayList<OWLObjectProperty> lingList = new ArrayList<OWLObjectProperty>();
-		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_LING_ATTRIBUTE)), new ArrayList<OWLObjectProperty>(), lingList);
+		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_LING_ATTRIBUTE)),
+                new ArrayList<OWLObjectProperty>(), lingList);
 		for(OWLObjectProperty prop : lingList){
 			//System.out.println(prop);
 			lingPropList.add(prop);
@@ -53,7 +51,8 @@ public class DomainOntology {
 		}
 		
 		ArrayList<OWLObjectProperty> semList = new ArrayList<OWLObjectProperty>();
-		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_SEM_ATTRIBUTE)), new ArrayList<OWLObjectProperty>(), semList);
+		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_SEM_ATTRIBUTE)),
+                new ArrayList<OWLObjectProperty>(), semList);
 		for(OWLObjectProperty prop : semList){
 			//System.out.println(prop);
 			semPropList.add(prop);
@@ -61,7 +60,8 @@ public class DomainOntology {
 		}
 		
 		ArrayList<OWLObjectProperty> numList = new ArrayList<OWLObjectProperty>();
-		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_NUM_ATTRIBUTE)), new ArrayList<OWLObjectProperty>(), numList);
+		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_NUM_ATTRIBUTE)),
+                new ArrayList<OWLObjectProperty>(), numList);
 		for(OWLObjectProperty prop : numList){
 			//System.out.println(prop);
 			numPropList.add(prop);
@@ -69,7 +69,8 @@ public class DomainOntology {
 		}
 		
 		ArrayList<OWLObjectProperty> relations = new ArrayList<OWLObjectProperty>();
-		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_RELATION)), new ArrayList<OWLObjectProperty>(), relations);
+		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_RELATION)),
+                new ArrayList<OWLObjectProperty>(), relations);
 		for(OWLObjectProperty prop : relations){
 			//System.out.println(prop);
 			relationsList.add(prop);
@@ -83,6 +84,23 @@ public class DomainOntology {
        
         
 	}
+
+    /**
+     * Gets the file location of the domain ontology
+     * @return File of domain ontology
+     */
+	public File getOntFile(){
+        return ontFile;
+    }
+
+    /**
+     * Gets the OWLOntology object representing a domain ontology
+     * @return OWLOntology representing a domain ontology
+     */
+    public OWLOntology getOntology(){
+        return ontology;
+    }
+
 	
 	/**
 	 * Gets a list of all schema category classes.
@@ -127,17 +145,31 @@ public class DomainOntology {
 		propList.addAll(semPropList);
 		return propList;
 	}
-	
+
+    /**
+     * Gets a Variable object given the short form of a Class URI
+     * @param clsDisplayName The short form of a class URI.
+     * @return A variable object representing the clsDisplayName
+     */
 	public Variable getVariable(String clsDisplayName){
 		String domainURI = ontology.getOntologyID().getOntologyIRI().toString();
 		//System.out.println(domainURI);
 		return new Variable(domainURI + "#" +clsDisplayName, this);
 	}
-	
+
+    /**
+     * Gets a Variable object given an OWLClass
+     * @param cls The OWL class representing the variable
+     * @return A variable object corresponding to the OWL class variable
+     */
 	public Variable getVariable(OWLClass cls){
 		return new Variable(cls.getIRI().toString(), this);
 	}
-	
+
+    /**
+     * Gets a list of all variables in a domain ontology
+     * @return List of Variable objects representing all variables in a domain ontology
+     */
 	public ArrayList<Variable> getAllVariables() {
 		ArrayList<Variable> variables = new ArrayList<Variable>();
 		ArrayList<OWLClass> elements = new ArrayList<OWLClass>();
@@ -270,7 +302,7 @@ public class DomainOntology {
 		return filler;
 	}
 	
-	public String getObjectPropertyFillerIndividual(OWLIndividual indiv, OWLObjectProperty prop){
+	public String getObjectPropertyFiller(OWLIndividual indiv, OWLObjectProperty prop){
 		String item = null;
 		OWLObjectPropertyExpression exp = (OWLObjectPropertyExpression) prop;
 		Set<OWLIndividual> enActions = indiv.asOWLNamedIndividual().getObjectPropertyValues(exp, ontology);
@@ -283,26 +315,96 @@ public class DomainOntology {
 		return item;
 		
 	}
+
+	public void setObjectPropertyFiller(OWLIndividual indiv, OWLObjectProperty prop){
+		//TODO: set object property for individual
+	}
 	
+	public ArrayList<String> getEquivalentDataPropertyFiller(OWLClass cls, OWLDataProperty prop){
+		ArrayList<String> filler = new ArrayList<String>();
+		Set<OWLClassExpression> equivClassExp = cls.getEquivalentClasses(ontology);
+		for(OWLClassExpression equiv : equivClassExp){
+			if(equiv.getClassExpressionType().equals(ClassExpressionType.DATA_SOME_VALUES_FROM)){
+				OWLDataSomeValuesFrom axiom = (OWLDataSomeValuesFrom) equiv;
+				//System.out.println("This is Filler: " + axiom.getFiller() + " Type: " +
+				//		axiom.getFiller().getDataRangeType());
+				if(axiom.getFiller().getDataRangeType().equals(DataRangeType.DATA_ONE_OF)){
+					OWLDataOneOf dataFiller = (OWLDataOneOf) axiom.getFiller();
+					Set<OWLLiteral> fillerLiterals = dataFiller.getValues();
+					for(OWLLiteral lit : fillerLiterals){
+						filler.add(lit.getLiteral());
+					}
+				}
+
+			}
+		}
+
+		return filler;
+	}
+
 	public ArrayList<String> getDataPropertyFiller(OWLClass cls, OWLDataProperty prop){
 		ArrayList<String> filler = new ArrayList<String>();
 		Set<OWLClassExpression> subclassExp = cls.getSuperClasses(ontology);
+		subclassExp.addAll(cls.getEquivalentClasses(ontology));
 		for(OWLClassExpression sub : subclassExp){
 			if(sub.getClassExpressionType().equals(ClassExpressionType.DATA_SOME_VALUES_FROM)){
 				//System.out.println(sub.toString());
 				OWLDataSomeValuesFrom axiom = (OWLDataSomeValuesFrom) sub;
 				//System.out.println("This is Filler: " + axiom.getFiller() + " Type: " + axiom.getFiller().getDataRangeType());
-				if(axiom.getFiller().getDataRangeType().equals(DataRangeType.DATATYPE_RESTRICTION)){
+				if(axiom.getFiller().getDataRangeType().equals(DataRangeType.DATATYPE_RESTRICTION)
+                        && axiom.getProperty().equals(prop)){
 					OWLDatatypeRestriction dataRestriction = (OWLDatatypeRestriction) axiom.getFiller();
 					Set<OWLFacetRestriction> facets = dataRestriction.getFacetRestrictions();
 					for(OWLFacetRestriction facet : facets){
 						//System.out.println("Facet: " + facet.getFacet().toString() + " Value: " + facet.getFacetValue().toString());
 						String temp = "";
 						if(facet.getFacet().equals(OWLFacet.MIN_INCLUSIVE)){
-							temp = temp + ">=" + facet.getFacetValue().parseFloat();
+							temp = temp + ">=";
+							if(facet.getFacetValue().isFloat()){
+								temp = temp + facet.getFacetValue().parseFloat();
+							}
+							if(facet.getFacetValue().isDouble()){
+								temp = temp + facet.getFacetValue().parseDouble();
+							}
+							if(facet.getFacetValue().isInteger()){
+								temp = temp + facet.getFacetValue().parseInteger();
+							}
+						}
+						if(facet.getFacet().equals(OWLFacet.MIN_EXCLUSIVE)){
+							temp = temp + ">";
+							if(facet.getFacetValue().isFloat()){
+								temp = temp + facet.getFacetValue().parseFloat();
+							}
+							if(facet.getFacetValue().isDouble()){
+								temp = temp + facet.getFacetValue().parseDouble();
+							}
+							if(facet.getFacetValue().isInteger()){
+								temp = temp + facet.getFacetValue().parseInteger();
+							}
 						}
 						if(facet.getFacet().equals(OWLFacet.MAX_INCLUSIVE)){
-							temp = temp + "<=" + facet.getFacetValue().parseFloat();
+							temp = temp + "<=";
+							if(facet.getFacetValue().isFloat()){
+								temp = temp + facet.getFacetValue().parseFloat();
+							}
+							if(facet.getFacetValue().isDouble()){
+								temp = temp + facet.getFacetValue().parseDouble();
+							}
+							if(facet.getFacetValue().isInteger()){
+								temp = temp + facet.getFacetValue().parseInteger();
+							}
+						}
+						if(facet.getFacet().equals(OWLFacet.MAX_EXCLUSIVE)){
+							temp = temp + "<";
+							if(facet.getFacetValue().isFloat()){
+								temp = temp + facet.getFacetValue().parseFloat();
+							}
+							if(facet.getFacetValue().isDouble()){
+								temp = temp + facet.getFacetValue().parseDouble();
+							}
+							if(facet.getFacetValue().isInteger()){
+								temp = temp + facet.getFacetValue().parseInteger();
+							}
 						}
 						//System.out.println(temp);
 						filler.add(temp);
@@ -312,11 +414,16 @@ public class DomainOntology {
 		}
 		return filler;
 	}
+
+	public void setDataPropertyFiller(OWLIndividual indiv, String str){
+		//TODO: set string data property for individual
+	}
 	
-	public ArrayList<OWLClassExpression> getEquivalentObjectPropertyFillerList(OWLClass cls, ArrayList<OWLObjectProperty> props){
-		ArrayList<OWLClassExpression> filler = new ArrayList<OWLClassExpression>();
+	public HashMap<String, ArrayList<OWLClassExpression>> getEquivalentObjectPropertyFillerMap(OWLClass cls, ArrayList<OWLObjectProperty> props){
+		HashMap<String, ArrayList<OWLClassExpression>> map = new HashMap<String, ArrayList<OWLClassExpression>>();
 		Set<OWLClassExpression> exp = cls.getEquivalentClasses(ontology);
 		for(OWLClassExpression ce : exp){
+			ArrayList<OWLClassExpression> filler = new ArrayList<OWLClassExpression>();
 			if(ce.getClassExpressionType().compareTo(ClassExpressionType.OBJECT_SOME_VALUES_FROM) == 0){
 				OWLObjectSomeValuesFrom obj = (OWLObjectSomeValuesFrom) ce;
 				OWLObjectPropertyExpression propExp = obj.getProperty();
@@ -325,10 +432,20 @@ public class DomainOntology {
 					OWLClassExpression fillerClass = obj.getFiller();
 					//System.out.println("FILLER: " + fillerClass.toString());
 					filler.add(fillerClass);
-					
+					map.put(propExp.asOWLObjectProperty().getIRI().toString(), filler);
 				}
-				
+
 			}
+		}
+
+
+		return map;
+	}
+
+	public ArrayList<OWLClassExpression> getEquivalentObjectPropertyFillerList(OWLClass cls, ArrayList<OWLObjectProperty> props){
+		ArrayList<OWLClassExpression> filler = new ArrayList<OWLClassExpression>();
+		for(OWLObjectProperty prop : props){
+			filler.addAll(this.getEquivalentObjectPropertyFillerList(cls, prop));
 		}
 		return filler;
 	}
@@ -448,6 +565,95 @@ public class DomainOntology {
 		}
 		return labelSet;
 	}
+
+	public void setAnnotationList(OWLClass cls, OWLAnnotationProperty annotationProperty, ArrayList<String> list)
+            throws Exception{
+	    for(String item : list){
+	        this.setAnnotation(cls, annotationProperty, item);
+        }
+    }
+
+    public void setAnnotation(OWLClass cls, OWLAnnotationProperty annotationProperty, String item) throws Exception{
+	    OWLLiteral literal = factory.getOWLLiteral(item);
+	    OWLAnnotation annotation = factory.getOWLAnnotation(annotationProperty, literal);
+	    OWLAnnotationAssertionAxiom annotationAssertionAxiom = factory.getOWLAnnotationAssertionAxiom(cls.getIRI(),
+                annotation);
+	    manager.addAxiom(ontology, annotationAssertionAxiom);
+	    manager.saveOntology(ontology);
+    }
+
+    public void setAnnotationList(OWLNamedIndividual ind, OWLAnnotationProperty annotationProperty, ArrayList<String> list)
+            throws Exception{
+        for(String item : list){
+            this.setAnnotation(ind, annotationProperty, item);
+        }
+    }
+
+    public void setAnnotation(OWLNamedIndividual ind, OWLAnnotationProperty annotationProperty, String item) throws
+            Exception{
+        OWLLiteral literal = factory.getOWLLiteral(item);
+        OWLAnnotation annotation = factory.getOWLAnnotation(annotationProperty, literal);
+        OWLAnnotationAssertionAxiom annotationAssertionAxiom = factory.getOWLAnnotationAssertionAxiom(ind.getIRI(),
+                annotation);
+        manager.addAxiom(ontology, annotationAssertionAxiom);
+        manager.saveOntology(ontology);
+    }
+
+    public void createClass(String classURI, String parentURI) throws Exception{
+	    OWLClass parentClass = factory.getOWLClass(IRI.create(parentURI));
+	    OWLClass childClass = factory.getOWLClass(IRI.create(classURI));
+
+	    OWLAxiom subclassAxiom = factory.getOWLSubClassOfAxiom(childClass, parentClass);
+	    manager.addAxiom(ontology, subclassAxiom);
+	    manager.saveOntology(ontology);
+
+    }
+
+    public void createIndividual(String indURI, String clsURI) throws Exception{
+	    OWLNamedIndividual individual = factory.getOWLNamedIndividual(IRI.create(indURI));
+	    OWLClass cls = factory.getOWLClass(IRI.create(clsURI));
+
+	    OWLClassAssertionAxiom classAssertionAxiom = factory.getOWLClassAssertionAxiom(cls, individual);
+	    manager.addAxiom(ontology, classAssertionAxiom);
+	    manager.saveOntology(ontology);
+    }
+
+    public void setObjectProperty(LogicExpression<String> propValues, OWLClass cls, OWLObjectProperty prop) throws
+            Exception{
+        if(propValues.isSingleExpression()){
+            OWLClass valueClass = factory.getOWLClass(IRI.create(propValues.get(0)));
+            OWLObjectSomeValuesFrom someValuesFrom = factory.getOWLObjectSomeValuesFrom(prop, valueClass);
+            OWLAxiom hasPropAxiom = factory.getOWLSubClassOfAxiom(cls, someValuesFrom);
+            manager.addAxiom(ontology, hasPropAxiom);
+            manager.saveOntology(ontology);
+        }else if(propValues.isOrExpression()){
+            Set<OWLClassExpression> values = new HashSet<OWLClassExpression>();
+            for(String str : propValues){
+                OWLClass valueClass = factory.getOWLClass(IRI.create(str));
+                values.add(valueClass);
+            }
+            OWLObjectUnionOf union = factory.getOWLObjectUnionOf(values);
+            OWLAxiom unionAxiom = factory.getOWLSubClassOfAxiom(cls, union);
+            manager.addAxiom(ontology, unionAxiom);
+            manager.saveOntology(ontology);
+        }
+    }
+
+    public void saveDomainOntology() throws Exception{
+	    manager.saveOntology(ontology);
+    }
+
+    public Anchor createAnchor(String anchorURI, String parentURI) throws Exception{
+        this.createClass(anchorURI, parentURI);
+
+        Anchor newAnchor = new Anchor(anchorURI, this);
+
+        return newAnchor;
+    }
+
+    public Anchor createAnchor(String anchorURI) throws Exception{
+	    return this.createAnchor(anchorURI, OntologyConstants.ANCHOR);
+    }
 	
 	public ArrayList<String> getAnnotationStringList(OWLIndividual ind, OWLAnnotationProperty annotationProperty, String lang){
 		ArrayList<String> list = new ArrayList<String>();
@@ -465,13 +671,23 @@ public class DomainOntology {
 		return list;
 	}
 	
-	public ArrayList<Term> createAnchorDictionary(){
-		ArrayList<Term> clsList = new ArrayList<Term>();
+	public ArrayList<Anchor> createAnchorDictionary(){
+		ArrayList<Anchor> clsList = new ArrayList<Anchor>();
 		
-		for(OWLClass cls: this.getAllSubClasses((factory.getOWLClass(IRI.create(OntologyConstants.TARGET))), false)){
-			clsList.add(new Term(cls.getIRI().toString(), this));
+		for(OWLClass cls: this.getAllSubClasses((factory.getOWLClass(IRI.create(OntologyConstants.ANCHOR))), false)){
+			clsList.add(new Anchor(cls.getIRI().toString(), this));
 		}
 		return clsList;
+	}
+
+	public ArrayList<CompoundAnchor> createCompoundAnchorDictionary(){
+		ArrayList<CompoundAnchor> clsList = new ArrayList<CompoundAnchor>();
+		for(OWLClass cls: this.getAllSubClasses((factory.getOWLClass(IRI.create(OntologyConstants.COMPOUND_ANCHOR))), false)){
+			clsList.add(new CompoundAnchor(cls.getIRI().toString(), this));
+		}
+
+		return clsList;
+
 	}
 	
 	public ArrayList<Modifier> createModifierDictionary() throws Exception{
@@ -488,6 +704,29 @@ public class DomainOntology {
 		}
 		return allMods;
 	}
+
+	public HashMap<String, ArrayList<Modifier>> createModifierTypeMap() throws Exception{
+		HashMap<String, ArrayList<Modifier>> modifierMap = new HashMap<String, ArrayList<Modifier>>();
+		ArrayList<Modifier> linguistic = new ArrayList<Modifier>();
+		ArrayList<Modifier> semantic = new ArrayList<Modifier>();
+		ArrayList<Modifier> numeric = new ArrayList<Modifier>();
+
+		for(Modifier mod : this.createModifierDictionary()){
+			if(mod.getModifierType().equals(Modifier.LINGUISTIC)){
+				linguistic.add(mod);
+			}else if (mod.getModifierType().equals(Modifier.SEMANTIC)){
+				semantic.add(mod);
+			}else if (mod.getModifierType().equals(Modifier.NUMERIC)){
+				numeric.add(mod);
+			}
+		}
+
+		modifierMap.put(Modifier.LINGUISTIC, linguistic);
+		modifierMap.put(Modifier.SEMANTIC, semantic);
+		modifierMap.put(Modifier.NUMERIC, numeric);
+
+		return modifierMap;
+	}
 	
 	public ArrayList<Modifier> createClosureDictionary(){
 		ArrayList<Modifier> clsList = new ArrayList<Modifier>();
@@ -498,14 +737,26 @@ public class DomainOntology {
 		return clsList;
 	}
 	
-	public ArrayList<Modifier> createPseudoDictionary(){
+	public ArrayList<Modifier> createPseudoModifierDictionary(){
 		ArrayList<Modifier> clsList = new ArrayList<Modifier>();
 		
-		for(OWLClass cls: this.getAllSubClasses((factory.getOWLClass(IRI.create(OntologyConstants.PSEUDO))), false)){
+		for(OWLClass cls: this.getAllSubClasses((factory.getOWLClass(IRI.create(OntologyConstants.PSEUDO_MODIFIER))),
+                false)){
 			clsList.add(new Modifier(cls.getIRI().toString(), this));
 		}
 		return clsList;
 	}
+
+	public ArrayList<Anchor> createPseudoAnchorDictionary(){
+        ArrayList<Anchor> clsList = new ArrayList<Anchor>();
+
+        for(OWLClass cls: this.getAllSubClasses((factory.getOWLClass(IRI.create(OntologyConstants.PSEUDO_ANCHOR))),
+                false)){
+            clsList.add(new Anchor(cls.getIRI().toString(), this));
+        }
+
+        return clsList;
+    }
 	
 	private void getObjectPropertyHierarchy(OWLObjectProperty prop, ArrayList<OWLObjectProperty> visitedProp, ArrayList<OWLObjectProperty> propList){
 		//make sure prop exists and hasn't already been visited
@@ -782,7 +1033,9 @@ public class DomainOntology {
 	
 	public ArrayList<String> getDirectSuperClasses(OWLClass cls){
 		ArrayList<String> list = new ArrayList<String>();
-		Set<OWLClassExpression> superList = cls.getSuperClasses(ontology);
+		Set<OWLOntology> ontologySet = ontology.getImports();
+		ontologySet.add(ontology);
+		Set<OWLClassExpression> superList = cls.getSuperClasses(ontologySet);
 		for(OWLClassExpression c : superList){
 			if(!c.isAnonymous()){
 				list.add(c.asOWLClass().getIRI().toString());
@@ -793,7 +1046,9 @@ public class DomainOntology {
 	
 	public ArrayList<String> getDirectSubClasses(OWLClass cls){
 		ArrayList<String> list = new ArrayList<String>();
-		Set<OWLClassExpression> subList = cls.getSubClasses(ontology);
+		Set<OWLOntology> ontologySet = ontology.getImports();
+		ontologySet.add(ontology);
+		Set<OWLClassExpression> subList = cls.getSubClasses(ontologySet);
 		for(OWLClassExpression c : subList){
 			list.add(c.asOWLClass().getIRI().toString());
 		}
@@ -809,4 +1064,61 @@ public class DomainOntology {
 		
 		return ruleStrings;
 	}
+
+	public String getDomainURI(){
+		return ontology.getOntologyID().getOntologyIRI().toString();
+	}
+
+
+
+	public void setDataProperty(OWLIndividual indiv, String dataPropertyURI, String value) throws OWLOntologyStorageException {
+		OWLDataProperty prop = factory.getOWLDataProperty(IRI.create(dataPropertyURI));
+		OWLLiteral literal = factory.getOWLLiteral(value);
+		OWLDataPropertyAssertionAxiom axiom = factory.getOWLDataPropertyAssertionAxiom(prop, indiv, literal);
+		manager.addAxiom(ontology, axiom);
+		manager.saveOntology(ontology);
+	}
+
+	public void createVariable(){
+		//TODO: add method to create variables in domain.
+	}
+
+	private static void getPath(OWLClass cls, ClassPath path, List<ClassPath> paths){
+        //add to list of paths if more than one exists
+        if(!paths.contains(path)){
+            paths.add(path);
+        }
+
+        //add to current path
+        path.add(0, cls);
+        //iterate over parents
+        List<OWLClass> parents = new ArrayList<OWLClass>();
+        for(OWLClassExpression clsExp : cls.getSuperClasses(manager.getOntologies())){
+            if(clsExp.getClassExpressionType().equals(ClassExpressionType.OWL_CLASS)){
+                parents.add(clsExp.asOWLClass());
+            }
+        }
+
+        //if only one parent add to path
+        if(parents.size() == 1){
+            getPath(parents.get(0), path, paths);
+        }else if(parents.size() > 1){
+            //clone current path and start new one
+            for(int i = 1; i < parents.size(); i++){
+                getPath(parents.get(i), new ClassPath(path), paths);
+            }
+            getPath(parents.get(0), path, paths);
+        }
+    }
+
+
+    public static List<ClassPath> getRootClassPaths(OWLClass cls){
+        if(cls != null){
+            //get paths to root
+            List<ClassPath> paths = new ArrayList<ClassPath>();
+            getPath(cls, new ClassPath(), paths);
+            return paths;
+        }
+        return Collections.EMPTY_LIST;
+    }
 }
