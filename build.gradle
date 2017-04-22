@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
 group = 'edu.utah.blulab'
-version = '2016.12.3-SNAPSHOT'
+version = '3.0'
 
 description = """DomainOntologyAPI"""
 
@@ -28,6 +28,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version:'4.10'
 }
 
+// "gradle publish" to run
 publishing {
     publications {
         mavenJava(MavenPublication) {
@@ -39,7 +40,7 @@ publishing {
     repositories {
         maven {
         	name "Blunexus Repository"
-            url "https://blunexus.chpc.utah.edu/content/repositories/snapshots"
+            url "https://blunexus.chpc.utah.edu/content/repositories/releases/"
             credentials {
                 username "billscuba"
                 password "ch@ng3m3"
