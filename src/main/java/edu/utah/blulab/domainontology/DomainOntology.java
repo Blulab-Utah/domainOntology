@@ -727,6 +727,18 @@ public class DomainOntology {
 
 		return modifierMap;
 	}
+
+
+	public ArrayList<Modifier> getDefaultModifiers() throws Exception {
+		ArrayList<Modifier> defaults = new ArrayList<Modifier>();
+		for(Modifier mod : this.createModifierDictionary()){
+			if(mod.isDefault()){
+				defaults.add(mod);
+			}
+		}
+
+		return defaults;
+	}
 	
 	public ArrayList<Modifier> createClosureDictionary(){
 		ArrayList<Modifier> clsList = new ArrayList<Modifier>();

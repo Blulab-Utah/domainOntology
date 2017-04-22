@@ -8,12 +8,13 @@ import java.util.ArrayList;
 public class Annotation {
 
     ArrayList<String> spans;
-    String annotationCategory, annotationText;
+    String annotationCategory, annotationText, annotationID;
 
     public Annotation(){
         ArrayList<String> spans = new ArrayList<String>();
         String annotationCategory = "";
         String annotationText = "";
+        String annotationID = "";
     }
 
     public ArrayList<String> getSpans(){
@@ -38,5 +39,13 @@ public class Annotation {
 
     public String getAnnotationText(){
         return annotationText;
+    }
+
+    public void setAnnotationID(String annotationID){
+        this.annotationID = annotationID;
+    }
+
+    public String getAnnotationID(){
+        return annotationID;
     }
 }
