@@ -5,21 +5,38 @@ import java.util.ArrayList;
 /**
  * Created by melissa on 4/22/17.
  */
-public interface Annotation {
+public class Annotation {
 
-    ArrayList<String> spans = new ArrayList<String>();
-    Object annotationCategory = new Object();
-    String annotationText = "";
+    ArrayList<String> spans;
+    String annotationCategory, annotationText;
 
-    public ArrayList<String> getSpans();
+    public Annotation(){
+        ArrayList<String> spans = new ArrayList<String>();
+        String annotationCategory = "";
+        String annotationText = "";
+    }
 
-    public void setSpans(ArrayList<String> spans);
+    public ArrayList<String> getSpans(){
+        return spans;
+    }
 
-    public Object getAnnotationCategory();
+    public void setSpans(ArrayList<String> spans){
+        this.spans = spans;
+    }
 
-    public void setAnnotationCategory(Object category);
+    public String getAnnotationCategory(){
+        return annotationCategory;
+    }
 
-    public void setAnnotationText(String text);
+    public void setAnnotationCategory(String category){
+        annotationCategory = category;
+    }
 
-    public String getAnnotationText();
+    public void setAnnotationText(String text){
+        annotationText = text;
+    }
+
+    public String getAnnotationText(){
+        return annotationText;
+    }
 }
