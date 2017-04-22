@@ -12,6 +12,7 @@ public class Modifier {
 	public final static String LINGUISTIC = "Linguistic";
 	public final static String SEMANTIC = "Semantic";
 	public final static String NUMERIC = "Numeric";
+	public final static String QUALIFIER = "Qualifier";
 	
 	
 	public Modifier(String clsURI, DomainOntology domain){
@@ -29,6 +30,8 @@ public class Modifier {
 				return NUMERIC;
 			}else if(path.contains(domain.getClass(OntologyConstants.SEMANTIC_MODIFIER))){
 				return SEMANTIC;
+			}else if(path.contains(domain.getClass(OntologyConstants.QUALIFIER)){
+				return QUALIFIER;
 			}
 		}
 

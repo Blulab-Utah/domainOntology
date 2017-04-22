@@ -79,6 +79,7 @@ public class OntologyConstants {
 	public static final String LINGUISTIC_MODIFIER = CT_PM + "#LinguisticModifier";
 	public static final String SEMANTIC_MODIFIER = CT_PM + "#SemanticModifier";
 	public static final String NUMERIC_MODIFIER = CT_PM + "#NumericModifier";
+	public static final String QUALIFIER = CT_PM + "#Qualifier";
 	public static final String UNIT = CT_PM + "#Unit";
 
 
