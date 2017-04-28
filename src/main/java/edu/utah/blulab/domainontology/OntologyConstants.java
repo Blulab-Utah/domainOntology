@@ -33,6 +33,7 @@ public class OntologyConstants {
 	public static final String HAS_SEM_ATTRIBUTE = SO_PM + "#hasSemanticModifier";
 	public static final String HAS_LING_ATTRIBUTE = SO_PM + "#hasLinguisticModifier";
 	public static final String HAS_NUM_ATTRIBUTE = SO_PM + "#hasNumericModifier";
+	public static final String HAS_QUALIFIER = SO_PM + "#hasQualifier";
 	public static final String HAS_RELATION = SO_PM + "#hasRelation";
 	public static final String HAS_ANCHOR = SO_PM + "#hasAnchor";
 	

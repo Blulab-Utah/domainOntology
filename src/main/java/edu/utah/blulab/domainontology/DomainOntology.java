@@ -6,6 +6,7 @@ import java.util.*;
 import com.sun.media.sound.ModelIdentifier;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
@@ -17,7 +18,8 @@ public class DomainOntology {
 	private static OWLOntology ontology;
 	private static OWLDataFactory factory;
 	private File ontFile;
-	private static ArrayList<OWLObjectProperty> propertyList, lingPropList, semPropList, numPropList, relationsList;
+	private static ArrayList<OWLObjectProperty> propertyList, lingPropList, semPropList, numPropList, qualifierPropList,
+            relationsList;
 	private static ArrayList<OWLClass> schemaClassList;
 	private static OWLReasoner reasoner;
 	
@@ -39,48 +41,24 @@ public class DomainOntology {
 		ontology = manager.loadOntologyFromOntologyDocument(ontFile);
 		reasoner = this.getOWLReasoner();
 		propertyList = new ArrayList<OWLObjectProperty>();
-		lingPropList = new ArrayList<OWLObjectProperty>();
-		semPropList = new ArrayList<OWLObjectProperty>();
-		numPropList = new ArrayList<OWLObjectProperty>();
-		relationsList = new ArrayList<OWLObjectProperty>();
+        lingPropList = this.getPropertyList(factory.getOWLObjectProperty(
+                IRI.create(OntologyConstants.HAS_LING_ATTRIBUTE)), false);
+		semPropList = this.getPropertyList(factory.getOWLObjectProperty(
+                IRI.create(OntologyConstants.HAS_SEM_ATTRIBUTE)), false);
+		numPropList = this.getPropertyList(factory.getOWLObjectProperty(
+                IRI.create(OntologyConstants.HAS_NUM_ATTRIBUTE)), false);
+		qualifierPropList = this.getPropertyList(factory.getOWLObjectProperty(
+                IRI.create(OntologyConstants.HAS_QUALIFIER)), false);
+		relationsList = this.getPropertyList(factory.getOWLObjectProperty(
+                IRI.create(OntologyConstants.HAS_RELATION)), false);
 		schemaClassList = this.getSchemaClasses();
 		
-		ArrayList<OWLObjectProperty> lingList = new ArrayList<OWLObjectProperty>();
-		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_LING_ATTRIBUTE)),
-                new ArrayList<OWLObjectProperty>(), lingList);
-		for(OWLObjectProperty prop : lingList){
-			//System.out.println(prop);
-			lingPropList.add(prop);
-			propertyList.add(prop);
-		}
-		
-		ArrayList<OWLObjectProperty> semList = new ArrayList<OWLObjectProperty>();
-		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_SEM_ATTRIBUTE)),
-                new ArrayList<OWLObjectProperty>(), semList);
-		for(OWLObjectProperty prop : semList){
-			//System.out.println(prop);
-			semPropList.add(prop);
-			propertyList.add(prop);
-		}
-		
-		ArrayList<OWLObjectProperty> numList = new ArrayList<OWLObjectProperty>();
-		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_NUM_ATTRIBUTE)),
-                new ArrayList<OWLObjectProperty>(), numList);
-		for(OWLObjectProperty prop : numList){
-			//System.out.println(prop);
-			numPropList.add(prop);
-			propertyList.add(prop);
-		}
-		
-		ArrayList<OWLObjectProperty> relations = new ArrayList<OWLObjectProperty>();
-		getObjectPropertyHierarchy(factory.getOWLObjectProperty(IRI.create(OntologyConstants.HAS_RELATION)),
-                new ArrayList<OWLObjectProperty>(), relations);
-		for(OWLObjectProperty prop : relations){
-			//System.out.println(prop);
-			relationsList.add(prop);
-		}
-		
-		System.out.println("Loaded ontology:" + ontology.getOntologyID().getOntologyIRI().toString());
+		propertyList.addAll(lingPropList);
+		propertyList.addAll(semPropList);
+		propertyList.addAll(numPropList);
+		propertyList.addAll(qualifierPropList);
+
+        System.out.println("Loaded ontology:" + ontology.getOntologyID().getOntologyIRI().toString());
 		System.out.println("Loaded imports: ");
 		for(OWLOntology ont : ontology.getImports()){
 			System.out.println(ont.getOntologyID().getOntologyIRI().toString());
@@ -96,7 +74,16 @@ public class DomainOntology {
 		return reasoner;
 	}
 
+    protected ArrayList<OWLObjectProperty> getPropertyList(OWLObjectProperty prop, boolean bool){
+        ArrayList<OWLObjectProperty> propertyList = new ArrayList<OWLObjectProperty>();
 
+        NodeSet<OWLObjectPropertyExpression> properties = reasoner.getSubObjectProperties(prop, bool);
+        for(OWLObjectPropertyExpression sub : properties.getFlattened()){
+            if(!sub.isOWLBottomObjectProperty()) propertyList.add(sub.asOWLObjectProperty());
+        }
+
+        return propertyList;
+    }
 
 	/**
      * Gets the file location of the domain ontology
