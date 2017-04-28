@@ -6,6 +6,8 @@ import java.util.*;
 import com.sun.media.sound.ModelIdentifier;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
 import org.semanticweb.owlapi.vocab.OWLFacet;
 
@@ -17,6 +19,7 @@ public class DomainOntology {
 	private File ontFile;
 	private static ArrayList<OWLObjectProperty> propertyList, lingPropList, semPropList, numPropList, relationsList;
 	private static ArrayList<OWLClass> schemaClassList;
+	private static OWLReasoner reasoner;
 	
 	/**
 	 * Creates a domain ontology from a local owl file.
@@ -34,6 +37,7 @@ public class DomainOntology {
 			manager.addIRIMapper(autoIRIMapper);
 		}
 		ontology = manager.loadOntologyFromOntologyDocument(ontFile);
+		reasoner = this.getOWLReasoner();
 		propertyList = new ArrayList<OWLObjectProperty>();
 		lingPropList = new ArrayList<OWLObjectProperty>();
 		semPropList = new ArrayList<OWLObjectProperty>();
@@ -85,7 +89,16 @@ public class DomainOntology {
         
 	}
 
-    /**
+    protected OWLReasoner getOWLReasoner(){
+		if(reasoner == null){
+			reasoner = new StructuralReasonerFactory().createReasoner(ontology);
+		}
+		return reasoner;
+	}
+
+
+
+	/**
      * Gets the file location of the domain ontology
      * @return File of domain ontology
      */
@@ -316,9 +329,6 @@ public class DomainOntology {
 		
 	}
 
-	public void setObjectPropertyFiller(OWLIndividual indiv, OWLObjectProperty prop){
-		//TODO: set object property for individual
-	}
 	
 	public ArrayList<String> getEquivalentDataPropertyFiller(OWLClass cls, OWLDataProperty prop){
 		ArrayList<String> filler = new ArrayList<String>();
@@ -415,9 +425,6 @@ public class DomainOntology {
 		return filler;
 	}
 
-	public void setDataPropertyFiller(OWLIndividual indiv, String str){
-		//TODO: set string data property for individual
-	}
 	
 	public HashMap<String, ArrayList<OWLClassExpression>> getEquivalentObjectPropertyFillerMap(OWLClass cls, ArrayList<OWLObjectProperty> props){
 		HashMap<String, ArrayList<OWLClassExpression>> map = new HashMap<String, ArrayList<OWLClassExpression>>();
@@ -707,23 +714,15 @@ public class DomainOntology {
 
 	public HashMap<String, ArrayList<Modifier>> createModifierTypeMap() throws Exception{
 		HashMap<String, ArrayList<Modifier>> modifierMap = new HashMap<String, ArrayList<Modifier>>();
-		ArrayList<Modifier> linguistic = new ArrayList<Modifier>();
-		ArrayList<Modifier> semantic = new ArrayList<Modifier>();
-		ArrayList<Modifier> numeric = new ArrayList<Modifier>();
+		ArrayList<Modifier> modifierCategories = new ArrayList<Modifier>();
 
-		for(Modifier mod : this.createModifierDictionary()){
-			if(mod.getModifierType().equals(Modifier.LINGUISTIC)){
-				linguistic.add(mod);
-			}else if (mod.getModifierType().equals(Modifier.SEMANTIC)){
-				semantic.add(mod);
-			}else if (mod.getModifierType().equals(Modifier.NUMERIC)){
-				numeric.add(mod);
-			}
+		for(String clsName : this.getDirectSubClasses(
+				factory.getOWLClass(IRI.create(OntologyConstants.LINGUISTIC_MODIFIER)))){
+			modifierCategories.add(new Modifier(clsName, this));
 		}
 
-		modifierMap.put(Modifier.LINGUISTIC, linguistic);
-		modifierMap.put(Modifier.SEMANTIC, semantic);
-		modifierMap.put(Modifier.NUMERIC, numeric);
+
+
 
 		return modifierMap;
 	}
