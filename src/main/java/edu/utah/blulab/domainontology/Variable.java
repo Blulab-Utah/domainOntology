@@ -207,8 +207,6 @@ public class Variable {
 		return domain.getRootClassPaths(domain.getClass(uri));
 	}
 
-	//TODO create method to return annotation type
-
 
 	@Override
 	public String toString() {

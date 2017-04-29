@@ -14,13 +14,7 @@ public class testAPI {
 
 
     public static void main(String[] args) throws Exception {
-        //DomainOntology domain = new DomainOntology("/Users/melissa/git/useCases/colonoscopyQuality.owl", false);
         DomainOntology domain = new DomainOntology("/Users/melissa/git/useCases/pneumonia.owl", false);
-        //DomainOntology domain = new DomainOntology("C:\\Users\\Bill\\Desktop\\carotid stenosis.owl");
-        //DomainOntology domain = new DomainOntology("DomainOntologyAPI/src/main/resources/colonoscopy_20141001.owl");
-        //DomainOntology domain = new DomainOntology("src/main/resources/colonoscopy_20141001.owl");
-        //domain.getVariable("leukocytosis");
-        //domain.getVariable("KA247");
 
         ArrayList<Variable> domainVariables = domain.getAllVariables();
         System.out.println("********** Domain Variables: **********");
@@ -28,14 +22,14 @@ public class testAPI {
             System.out.println(var.toString());
         }
 
-        /**System.out.println("********** Modifier Dictionary: **********");
+        System.out.println("********** Modifier Dictionary: **********");
          ArrayList<Modifier> modifierDictionary = domain.createModifierDictionary();
          for(Modifier modifier : modifierDictionary){
          System.out.println(modifier.toString());
-         }**/
+         }
 
         System.out.println("********** Modifier Map: **********");
-        HashMap<String, ArrayList<Modifier>> modifierMap = domain.createModifierTypeMap();
+        HashMap<String, ArrayList<Modifier>> modifierMap = domain.getModifierMap();
         Iterator iterator = modifierMap.entrySet().iterator();
         while (iterator.hasNext()) {
             Map.Entry<String, ArrayList<Modifier>> modifierEntry =
@@ -47,11 +41,12 @@ public class testAPI {
             System.out.println("");
         }
 
-        /**System.out.println("********** Target Dictionary: **********");
+
+        System.out.println("********** Anchor Dictionary: **********");
          ArrayList<Anchor> targetDictionary = domain.createAnchorDictionary();
          for(Anchor target : targetDictionary){
          System.out.println(target.toString());
-         }**/
+         }
     }
 
     @Test

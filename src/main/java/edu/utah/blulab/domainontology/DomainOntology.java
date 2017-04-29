@@ -22,6 +22,7 @@ public class DomainOntology {
             relationsList;
 	private static ArrayList<OWLClass> schemaClassList;
 	private static OWLReasoner reasoner;
+	private static HashMap<String, ArrayList<Modifier>> modifierMap;
 	
 	/**
 	 * Creates a domain ontology from a local owl file.
@@ -63,6 +64,9 @@ public class DomainOntology {
 		for(OWLOntology ont : ontology.getImports()){
 			System.out.println(ont.getOntologyID().getOntologyIRI().toString());
 		}
+
+		modifierMap = new HashMap<String, ArrayList<Modifier>>();
+		modifierMap = this.createModifierTypeMap();
        
         
 	}
@@ -588,23 +592,25 @@ public class DomainOntology {
 	
 	public ArrayList<Modifier> createModifierDictionary() throws Exception{
 		ArrayList<Modifier> allMods = new ArrayList<Modifier>();
-		
-		for(OWLClass cls : this.getAllSubClasses(factory.getOWLClass(IRI.create(OntologyConstants.LINGUISTIC_MODIFIER)), true)){
-			allMods.add(new Modifier(cls.getIRI().toString(), this));
+
+		Iterator iterator = modifierMap.entrySet().iterator();
+		while(iterator.hasNext()){
+			Map.Entry<String, ArrayList<Modifier>> modifierEntry =
+					(Map.Entry<String, ArrayList<Modifier>>) iterator.next();
+			allMods.addAll(modifierEntry.getValue());
 		}
-		for(OWLClass cls : this.getAllSubClasses(factory.getOWLClass(IRI.create(OntologyConstants.SEMANTIC_MODIFIER)), true)){
-			allMods.add(new Modifier(cls.getIRI().toString(), this));
-		}
-		for(OWLClass cls : this.getAllSubClasses(factory.getOWLClass(IRI.create(OntologyConstants.NUMERIC_MODIFIER)), true)){
-			allMods.add(new Modifier(cls.getIRI().toString(), this));
-		}
+
+
+
 		return allMods;
 	}
 
-	public HashMap<String, ArrayList<Modifier>> createModifierTypeMap() throws Exception{
-		HashMap<String, ArrayList<Modifier>> modifierMap = new HashMap<String, ArrayList<Modifier>>();
+	public HashMap<String, ArrayList<Modifier>> getModifierMap(){
+		return modifierMap;
+	}
 
 
+	private HashMap<String, ArrayList<Modifier>> createModifierTypeMap() throws Exception{
 		ArrayList<String> allCategories = new ArrayList<String>();
 		allCategories.addAll(this.getDirectSubClasses(
 				this.getClass(OntologyConstants.LINGUISTIC_MODIFIER)));
@@ -615,23 +621,7 @@ public class DomainOntology {
 		allCategories.addAll(this.getDirectSubClasses(
 				this.getClass(OntologyConstants.QUALIFIER)));
 
-
-		for(String modifierType : allCategories){
-			ArrayList<OWLClass> allSubs = this.getAllSubClasses(this.getClass(modifierType), false);
-			if(!allSubs.isEmpty()){
-				ArrayList<Modifier> modifierCategories = new ArrayList<Modifier>();
-				for(OWLClass subCls : allSubs){
-					if(!subCls.getIRI().toString().startsWith(OntologyConstants.CT_PM) &&
-							!subCls.getIRI().toString().startsWith(OntologyConstants.SO_PM)){
-						modifierCategories.add(new Modifier(subCls.getIRI().toString(), this));
-					}
-
-				}
-				if(!modifierCategories.isEmpty()){
-					modifierMap.put(modifierType, modifierCategories);
-				}
-			}
-		}
+		modifierMap = this.getModifierMap(allCategories);
 
 		return modifierMap;
 	}
@@ -646,6 +636,47 @@ public class DomainOntology {
 		}
 
 		return defaults;
+	}
+
+	private HashMap<String, ArrayList<Modifier>> getModifierMap(ArrayList<String> modifierList){
+		HashMap<String, ArrayList<Modifier>> modifiers = new HashMap<String, ArrayList<Modifier>>();
+		for(String modifierType : modifierList){
+			ArrayList<OWLClass> allSubs = this.getAllSubClasses(this.getClass(modifierType), false);
+			if(!allSubs.isEmpty()){
+				ArrayList<Modifier> modifierCategories = new ArrayList<Modifier>();
+				for(OWLClass subCls : allSubs){
+					if(!subCls.getIRI().toString().startsWith(OntologyConstants.CT_PM) &&
+							!subCls.getIRI().toString().startsWith(OntologyConstants.SO_PM)){
+						modifierCategories.add(new Modifier(subCls.getIRI().toString(), this));
+					}
+
+				}
+				if(!modifierCategories.isEmpty()){
+					modifiers.put(modifierType, modifierCategories);
+				}
+			}
+		}
+		return modifiers;
+	}
+
+	public HashMap<String, ArrayList<Modifier>> getAllLinguisticModifiers() {
+		return this.getModifierMap(this.getDirectSubClasses(
+				this.getClass(OntologyConstants.LINGUISTIC_MODIFIER)));
+	}
+
+	public HashMap<String, ArrayList<Modifier>> getAllSemanticModifiers() {
+		return this.getModifierMap(this.getDirectSubClasses(
+				this.getClass(OntologyConstants.LINGUISTIC_MODIFIER)));
+	}
+
+	public HashMap<String, ArrayList<Modifier>> getAllNumericModifiers() {
+		return this.getModifierMap(this.getDirectSubClasses(
+				this.getClass(OntologyConstants.LINGUISTIC_MODIFIER)));
+	}
+
+	public HashMap<String, ArrayList<Modifier>> getAllQualifiers() {
+		return this.getModifierMap(this.getDirectSubClasses(
+				this.getClass(OntologyConstants.LINGUISTIC_MODIFIER)));
 	}
 	
 	public ArrayList<Modifier> createClosureDictionary(){
