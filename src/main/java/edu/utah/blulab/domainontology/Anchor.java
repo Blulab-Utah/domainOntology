@@ -179,7 +179,10 @@ public class Anchor {
 
 	public ArrayList<String> getAllParents(){
 		ArrayList<String> parentAncestry = new ArrayList<String>();
-		parentAncestry = domain.getAllSuperClasses(domain.getClass(uri), false);
+		ArrayList<OWLClass> parentClasses= domain.getAllSuperClasses(domain.getClass(uri), false);
+		for(OWLClass cls: parentClasses){
+			parentAncestry.add(cls.getIRI().toString());
+		}
 		return parentAncestry;
 	}
 

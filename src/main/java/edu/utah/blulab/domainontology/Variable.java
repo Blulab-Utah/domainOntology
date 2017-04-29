@@ -196,13 +196,18 @@ public class Variable {
 
 	public ArrayList<String> getAllParents(){
 		ArrayList<String> parentAncestry = new ArrayList<String>();
-		parentAncestry = domain.getAllSuperClasses(domain.getClass(uri), false);
+		ArrayList<OWLClass> parentClasses= domain.getAllSuperClasses(domain.getClass(uri), false);
+		for(OWLClass cls: parentClasses){
+			parentAncestry.add(cls.getIRI().toString());
+		}
 		return parentAncestry;
 	}
 
 	public List<ClassPath> getClassPaths(){
 		return domain.getRootClassPaths(domain.getClass(uri));
 	}
+
+	//TODO create method to return annotation type
 
 
 	@Override

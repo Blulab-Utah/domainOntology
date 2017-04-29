@@ -2,8 +2,7 @@ package edu.utah.blulab.domainontology;
 
 import java.util.*;
 
-import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.*;
 import sun.rmi.runtime.Log;
 
 public class Modifier {
@@ -100,40 +99,26 @@ public class Modifier {
 	}
 
 	public boolean isDefault(){
-		boolean bool = false;
-		LogicExpression<LogicExpression<Modifier>> list = this.getDefaultDefintion();
-		for(LogicExpression<Modifier> expression : list){
-			if(!expression.isEmpty()){
-				bool = true;
-			}
-		}
-		return bool;
+        boolean bool = false;
+	    Set<OWLClassExpression> clsExpressions = domain.getClass(uri).getSuperClasses(domain.getOntology());
 
-	}
+        for(OWLClassExpression exp : clsExpressions){
+            if(exp.getClassExpressionType().equals(ClassExpressionType.DATA_SOME_VALUES_FROM)){
+                OWLDataSomeValuesFrom isDefaultExp = (OWLDataSomeValuesFrom) exp;
+                if(isDefaultExp.getProperty().asOWLDataProperty().equals(
+                        domain.getFactory().getOWLDataProperty(IRI.create(OntologyConstants.CT_PM+"#isDefaultValue")))){
+                    OWLDataOneOf dataValues = (OWLDataOneOf) isDefaultExp.getFiller();
+                    for(OWLLiteral lit : dataValues.getValues()){
+                        if(lit.getLiteral().compareToIgnoreCase("true") == 0){
+                            bool = true;
+                        }
+                    }
 
-	public LogicExpression<LogicExpression<Modifier>> getDefaultDefintion(){
-		LogicExpression<LogicExpression<Modifier>> defaultDef = new LogicExpression<LogicExpression<Modifier>>();
-		LogicExpression<Modifier> defValues = new LogicExpression<Modifier>();
+                }
+            }
+        }
 
-		HashMap<String, ArrayList<String>> defs = domain.getClassDefinition(domain.getClass(uri));
-		Iterator iter = defs.entrySet().iterator();
-		while(iter.hasNext()){
-			Map.Entry<String, ArrayList<String>> entry = (Map.Entry<String, ArrayList<String>>) iter.next();
-			defaultDef.setType(entry.getKey());
-			ArrayList<String> list = entry.getValue();
-			if(list.size() > 1){
-				defValues.setType("OR");
-			}else{
-				defValues.setType("SINGLE");
-			}
-			for(String str : list){
-				defValues.add(new Modifier(str, domain));
-			}
-
-		}
-
-		defaultDef.add(defValues);
-		return defaultDef;
+        return bool;
 	}
 
 	public ArrayList<String> getAllChildren(){
@@ -146,11 +131,14 @@ public class Modifier {
 		return childDescendents;
 	}
 
-	public ArrayList<String> getAllParents(){
-		ArrayList<String> parentAncestry = new ArrayList<String>();
-		parentAncestry = domain.getAllSuperClasses(domain.getClass(uri), false);
-		return parentAncestry;
-	}
+    public ArrayList<String> getAllParents(){
+        ArrayList<String> parentAncestry = new ArrayList<String>();
+        ArrayList<OWLClass> parentClasses= domain.getAllSuperClasses(domain.getClass(uri), false);
+        for(OWLClass cls: parentClasses){
+            parentAncestry.add(cls.getIRI().toString());
+        }
+        return parentAncestry;
+    }
 
 	public List<ClassPath> getClassPaths(){
 		return domain.getRootClassPaths(domain.getClass(uri));
@@ -165,8 +153,7 @@ public class Modifier {
 				//+ ", items=" + this.getItems()
 				//+ "\n\t\t Pseudos=" + this.getPseudos()
 				//+ "\n\t\t Closures=" + this.getClosures()
-				//+ ", isDefault? " + this.isDefault()
-				//+ ", Default Definiton = " + this.getDefaultDefintion()
+				+ ", isDefault? " + this.isDefault()
 				//+ "\n\tPARENTS: " + this.getAllParents()
 				//+ "\n\tCHILDREN: " + this.getAllChildren()
 				+ "]";

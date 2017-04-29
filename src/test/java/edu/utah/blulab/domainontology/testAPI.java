@@ -58,13 +58,6 @@ public class testAPI {
     public void example1() throws Exception {
         // TODO Auto-generated method stub
         DomainOntology domain = new DomainOntology("src/main/resources/colonoscopyQuality.owl", false);
-        //DomainOntology domain = new DomainOntology("/Users/mtharp/use_cases/DomainOntologies/pneumonia.owl");
-        //DomainOntology domain = new DomainOntology("/Users/mtharp/Desktop/vincipneu.owl.xml");
-        //DomainOntology domain = new DomainOntology("C:\\Users\\Bill\\Desktop\\carotid stenosis.owl");
-        //DomainOntology domain = new DomainOntology("DomainOntologyAPI/src/main/resources/colonoscopy_20141001.owl");
-        //DomainOntology domain = new DomainOntology("src/main/resources/colonoscopy_20141001.owl");
-        //domain.getVariable("leukocytosis");
-        //domain.getVariable("KA247");
 
         ArrayList<Variable> domainVariables = domain.getAllVariables();
         System.out.println("********** Domain Variables: **********");

@@ -172,118 +172,20 @@ public class DomainOntology {
      */
 	public ArrayList<Variable> getAllVariables() {
 		ArrayList<Variable> variables = new ArrayList<Variable>();
-		ArrayList<OWLClass> elements = new ArrayList<OWLClass>();
-		getSubClassHierarchy(factory.getOWLClass(IRI.create(OntologyConstants.SO_PM + "#Annotation")), new ArrayList<OWLClass>(), elements, true);
+
+
+		ArrayList<OWLClass> elements = this.getAllSubClasses(factory.getOWLClass(IRI.create(OntologyConstants.SO_PM + "#Annotation")), false);
 		//System.out.println("THESE ARE THE ELEMENTS IN THE DOMAIN ONTOLOGY...");
 		for(OWLClass cls : elements){
-			//System.out.println(cls.toString());
-			variables.add(getVariable(cls));
+			if(!cls.getIRI().toString().contains(OntologyConstants.CT_PM) &&
+					!cls.getIRI().toString().contains(OntologyConstants.SO_PM)){
+				variables.add(getVariable(cls));
+			}
 		}
 		return variables;
 	}
 
-	public HashMap<String, ArrayList<String>> getClassDefinition(OWLClass cls){
-		HashMap<String, ArrayList<String>> definitions = new HashMap<String, ArrayList<String>>();
-		ArrayList<String> clsList = new ArrayList<String>();
 
-		Set<OWLClassExpression> superDef = cls.getEquivalentClasses(ontology);
-		for(OWLClassExpression exp : superDef){
-			if(exp.getClassExpressionType().equals(ClassExpressionType.OBJECT_COMPLEMENT_OF)){
-				String listType = "COMPLEMENT";
-				OWLObjectComplementOf complement = (OWLObjectComplementOf) exp;
-				OWLClassExpression filler = ((OWLObjectComplementOf) exp).getOperand();
-				//System.out.println(filler);
-				if(!filler.isAnonymous()){
-					clsList.add(filler.asOWLClass().getIRI().toString());
-				}else if(filler.getClassExpressionType().equals(ClassExpressionType.OBJECT_UNION_OF)){
-					OWLObjectUnionOf union = (OWLObjectUnionOf) filler;
-					Set<OWLClassExpression> unionSet = union.getOperands();
-					for(OWLClassExpression expression : unionSet){
-						//System.out.println(expression);
-						if(!expression.isAnonymous()){
-							clsList.add(expression.asOWLClass().getIRI().toString());
-						}
-					}
-				}
-
-				definitions.put(listType, clsList);
-			}
-		}
-		return definitions;
-	}
-
-	private void getSubClassHierarchy(OWLClass cls, ArrayList<OWLClass> visitedCls, ArrayList<OWLClass> clsList, boolean ignoreImports){
-		//make sure class exists and hasn't already been visited
-		if(cls == null || visitedCls.contains(cls)){
-			return;
-		}
-		
-		Set<OWLClassExpression> subExp = cls.getSubClasses(manager.getOntologies());
-		//System.out.println("Class " + cls.asOWLClass().getIRI());
-		for(OWLClassExpression subCls : subExp){
-			//System.out.println("Expression: " + subCls.asOWLClass().toString());
-			if(!visitedCls.contains(cls.asOWLClass())){
-				visitedCls.add(cls.asOWLClass());
-			}
-			if(ignoreImports){
-				if(!subCls.asOWLClass().getIRI().getNamespace().equalsIgnoreCase(OntologyConstants.SO_PM+"#") &&
-						!subCls.asOWLClass().getIRI().getNamespace().equalsIgnoreCase(OntologyConstants.CT_PM+"#")){
-					clsList.add(subCls.asOWLClass());
-				}
-			}else{
-				if(!subCls.asOWLClass().isAnonymous()){
-					clsList.add(subCls.asOWLClass());
-				}
-				
-			}
-			
-			
-			getSubClassHierarchy(subCls.asOWLClass(), visitedCls, clsList, ignoreImports);
-		}
-		
-	}
-	
-	private void getSuperClassHierarchy(OWLClass cls, ArrayList<OWLClass> visitedCls, ArrayList<OWLClass> clsList, boolean ignoreImports){
-		//make sure class exists and hasn't already been visited
-		//visitedCls.add(factory.getOWLClass(IRI.create(OntologyConstants.ANNOTATION)));
-		if(!cls.isAnonymous()){
-			if(cls == null || visitedCls.contains(cls) || cls.equals(factory.getOWLClass(IRI.create(OntologyConstants.ANNOTATION)))){
-				return;
-			}
-			
-			Set<OWLClassExpression> superExp = cls.getSuperClasses(manager.getOntologies());
-			//System.out.println("Class " + cls.asOWLClass().getIRI());
-			for(OWLClassExpression superCls : superExp){
-				//System.out.println("Expression: " + superCls.asOWLClass().toString());
-				if(!superCls.isAnonymous()){
-					if(!visitedCls.contains(cls.asOWLClass())){
-						visitedCls.add(cls.asOWLClass());
-					}
-					if(ignoreImports){
-						if(!superCls.asOWLClass().getIRI().getNamespace().equalsIgnoreCase(OntologyConstants.SO_PM+"#") &&
-								!superCls.asOWLClass().getIRI().getNamespace().equalsIgnoreCase(OntologyConstants.CT_PM+"#")){
-							if(!superCls.equals(factory.getOWLClass(IRI.create(OntologyConstants.ANNOTATION)))){
-								clsList.add(superCls.asOWLClass());
-							}
-
-						}
-					}else{
-						if(!superCls.equals(factory.getOWLClass(IRI.create(OntologyConstants.ANNOTATION)))){
-							clsList.add(superCls.asOWLClass());
-						}
-					}
-
-					getSuperClassHierarchy(superCls.asOWLClass(), visitedCls, clsList, ignoreImports);
-				}
-
-
-			}
-		}
-		
-		
-	}
-		
-	
 	public OWLClass getEquivalentObjectPropertyFiller(OWLClass cls, OWLObjectProperty prop){
 		OWLClass filler = null;
 		Set<OWLClassExpression> exp = cls.getEquivalentClasses(ontology);
@@ -701,15 +603,35 @@ public class DomainOntology {
 
 	public HashMap<String, ArrayList<Modifier>> createModifierTypeMap() throws Exception{
 		HashMap<String, ArrayList<Modifier>> modifierMap = new HashMap<String, ArrayList<Modifier>>();
-		ArrayList<Modifier> modifierCategories = new ArrayList<Modifier>();
 
-		for(String clsName : this.getDirectSubClasses(
-				factory.getOWLClass(IRI.create(OntologyConstants.LINGUISTIC_MODIFIER)))){
-			modifierCategories.add(new Modifier(clsName, this));
+
+		ArrayList<String> allCategories = new ArrayList<String>();
+		allCategories.addAll(this.getDirectSubClasses(
+				this.getClass(OntologyConstants.LINGUISTIC_MODIFIER)));
+		allCategories.addAll(this.getDirectSubClasses(
+				this.getClass(OntologyConstants.SEMANTIC_MODIFIER)));
+		allCategories.addAll(this.getDirectSubClasses(
+				this.getClass(OntologyConstants.NUMERIC_MODIFIER)));
+		allCategories.addAll(this.getDirectSubClasses(
+				this.getClass(OntologyConstants.QUALIFIER)));
+
+
+		for(String modifierType : allCategories){
+			ArrayList<OWLClass> allSubs = this.getAllSubClasses(this.getClass(modifierType), false);
+			if(!allSubs.isEmpty()){
+				ArrayList<Modifier> modifierCategories = new ArrayList<Modifier>();
+				for(OWLClass subCls : allSubs){
+					if(!subCls.getIRI().toString().startsWith(OntologyConstants.CT_PM) &&
+							!subCls.getIRI().toString().startsWith(OntologyConstants.SO_PM)){
+						modifierCategories.add(new Modifier(subCls.getIRI().toString(), this));
+					}
+
+				}
+				if(!modifierCategories.isEmpty()){
+					modifierMap.put(modifierType, modifierCategories);
+				}
+			}
 		}
-
-
-
 
 		return modifierMap;
 	}
@@ -807,24 +729,34 @@ public class DomainOntology {
 		return list;
 	}
 	
-	public ArrayList<OWLClass> getAllSubClasses(OWLClass cls, boolean ignoreImports){
+	public ArrayList<OWLClass> getAllSubClasses(OWLClass cls, boolean getDirectOnly){
 		ArrayList<OWLClass> list = new ArrayList<OWLClass>();
 		
-		getSubClassHierarchy(cls, new ArrayList<OWLClass>(), list, ignoreImports);
+		NodeSet<OWLClass> subList = reasoner.getSubClasses(cls, getDirectOnly);
+		//list.addAll(subList.getFlattened());
+
+		for(OWLClass c : subList.getFlattened()){
+			if(!c.isAnonymous() && !c.isOWLNothing() && !c.isOWLThing()){
+				list.add(c);
+			}
+		}
 		
 		return list;
 	}
 	
-	public ArrayList<String> getAllSuperClasses(OWLClass cls, boolean ignoreImports){
+	public ArrayList<OWLClass> getAllSuperClasses(OWLClass cls, boolean getDirectOnly){
 		ArrayList<OWLClass> list = new ArrayList<OWLClass>();
-		ArrayList<String> superList = new ArrayList<String>();
-		
-		getSuperClassHierarchy(cls, new ArrayList<OWLClass>(), list, ignoreImports);
-		for(OWLClass superCls : list){
-			superList.add(superCls.getIRI().toString());
+
+		NodeSet<OWLClass> superList = reasoner.getSuperClasses(cls, getDirectOnly);
+		//list.addAll(superList.getFlattened());
+
+		for(OWLClass c : superList.getFlattened()){
+			if(!c.isAnonymous() && !c.isOWLNothing() && !c.isOWLThing()){
+				list.add(c);
+			}
 		}
 		
-		return superList;
+		return list;
 	}
 
 	public ArrayList<Variable> getAllEvents(){
@@ -1011,6 +943,7 @@ public class DomainOntology {
 	
 	public ArrayList<String> getAllIndividualURIs(OWLClass cls){
 		ArrayList<String> indURIs = new ArrayList<String>();
+		//TODO refactor using reasoner
 		Set<OWLIndividual> list = cls.getIndividuals(ontology);
 		for(OWLIndividual ind : list){
 			indURIs.add(ind.asOWLNamedIndividual().getIRI().toString());
@@ -1031,6 +964,8 @@ public class DomainOntology {
 	
 	public ArrayList<String> getDirectSuperClasses(OWLClass cls){
 		ArrayList<String> list = new ArrayList<String>();
+
+		//TODO: refactor using reasoner
 		Set<OWLOntology> ontologySet = ontology.getImports();
 		ontologySet.add(ontology);
 		Set<OWLClassExpression> superList = cls.getSuperClasses(ontologySet);
@@ -1044,6 +979,8 @@ public class DomainOntology {
 	
 	public ArrayList<String> getDirectSubClasses(OWLClass cls){
 		ArrayList<String> list = new ArrayList<String>();
+
+		//TODO: refactor using reasoner
 		Set<OWLOntology> ontologySet = ontology.getImports();
 		ontologySet.add(ontology);
 		Set<OWLClassExpression> subList = cls.getSubClasses(ontologySet);
