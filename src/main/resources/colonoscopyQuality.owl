@@ -16,3259 +16,3259 @@
     <Import>http://blulab.chpc.utah.edu/ontologies/TermMapping.owl</Import>
     <Import>http://blulab.chpc.utah.edu/ontologies/v2/Schema.owl</Import>
     <Declaration>
-        <NamedIndividual IRI="#I0509"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Creation_of_open_cecostomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Forceps_Biopsy_Rigid_Endoscopic"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0087"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Proximal_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0063"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I4990"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cecum_proper"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003181"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subserosa_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0281"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Laparoscopic_incidental_appendectomy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0390"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0508"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_transverse_mesocolon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ascending_colon_proper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lingual_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hepatic_flexure_of_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Excision_of_ruptured_appendix_by_open_approach"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FORCEPS_BIOPSY_ELECTRIC"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subserosa_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0086"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Diaphragmatic_flexure_of_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscle_layer_of_distal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0062"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_colic_flexure"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0280"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscle_layer_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epithelium_of_large_intestine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_transverse_fold_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Emergency_appendectomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mesothelium_of_serosa_of_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0283"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0065"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0392"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0150"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0041"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colonic_muscularis_propria"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0089"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dorsoventral_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003094"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Interval_appendectomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Connective_tissue_of_serosa_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003092"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendix_Epiploica"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#mass"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0064"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0282"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0040"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_proper_of_large_intestine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Connective_tissue_of_serosa_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0088"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003093"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distal_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0391"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendiceal_crypt_of_Lieberk_hn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Emergency_excision_of_normal_appendix"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003091"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_middle_portion_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ileal_epithelium"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0505"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03019"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Medium"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscularis_mucosae_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mucosa_of_distal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscularis_mucosae_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0083"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0419"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Medial_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003090"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Rectal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serosa_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_supporting_tissue_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0528"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0082"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sigmoid_Flexure"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0507"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mucosa_of_middle_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ileal_mucous_membrane"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03017"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0085"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Areolar_connective_tissue_of_subserosa_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscle_layer_of_proximal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0061"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DEVICE_BIOPSY_ENDOMYOCARDIAL"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Descending_colon_proper"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0506"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Superior_transverse_fold_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lamina_propria_mucosae_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0084"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03018"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_anti_mesenteric_border_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pelvic_appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subserosa_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SizeCategory"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cecum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0060"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Submucosa_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_perineal_flexure_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0525"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#KA_1002"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03015"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0416"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0549"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0307"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ProbableExistence_Certainty"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Right_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subserosa_of_distal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serosa_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Region_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular_muscle_layer_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epithelium_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_proximal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serosa_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Adequate"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#flat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0415"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0306"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03016"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0548"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0439"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#KA_1003"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Longitudinal_muscle_layer_of_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mucosa_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Severe_Severity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Flexure_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Region_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0309"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscularis_mucosae_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Other_incidental_appendectomy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0527"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Submucosa_of_middle_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0418"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serosa_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Apical_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#KA_1004"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscle_layer_of_middle_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0081"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendectomy_with_drainage"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Taenia_omentalis_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Optimum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Proximal_part_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_rectal_ampulla"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epiploic_appendage_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0526"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0308"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03014"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0417"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#KA_1005"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_mesenteric_border_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_sacral_flexure_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0080"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Excision_of_appendiceal_stump"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Proximal_part_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Endoscopic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mesothelium_of_serosa_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_ileal_lumen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0521"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0412"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Singular"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendiceal_lymphoid_nodule"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0303"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0436"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0218"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0109"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0327"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colonic_serosa"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ampulla_coli"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distal_part_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0520"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colon_wall_structure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Parietal_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anterolateral_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lamina_muscularis_of_colonic_mucous_membrane"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0302"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Ear"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0411"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0544"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0326"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0435"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0459"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0217"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0108"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003116"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0410"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Nasal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ProbableNegatedExistence_Certainty"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_ileal_lumen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0414"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Proximal_part_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0547"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0305"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0438"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0329"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#KA_1000"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_appendix_epiploica"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lateral_flexure_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular_muscle_layer_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03034"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0413"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0304"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0546"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Catheters_Vascular_Retrieval_Snare"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0328"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#KA_1001"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0437"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscularis_mucosae_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03058"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0219"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epithelium_proper_of_large_intestine"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003114"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003138"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SizeInCM"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#End_ileostomy_stoma"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Posterior_wall_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Areolar_connective_tissue_of_subserosa_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_longitudinal_layer_of_colonic_muscularis_propria"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_transverse_fold_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colonic_lumen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_cloacogenic_area_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0105"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0214"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0323"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0456"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0238"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Overlap_DocTimeRel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0347"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Proximal_half_of_appendix_structure"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0129"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Inferior_lamina_of_sigmoid_mesocolon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003113"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0540"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0431"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0322"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_colonic_muscularis_propria"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Refashioning_of_cecostomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rectoperinealis"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cervical_biopsy_forceps"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscle_layer_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Submucosa_of_distal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subserosa_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Longitudinal_layer_of_rectal_muscularis_propria"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_pericolic_tissue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cold_snare"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0346"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0455"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0213"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0128"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0479"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0237"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0104"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03020"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rectal_mucous_membrane"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OtherMember_Experiencer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0019"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003112"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pedunculated"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Laparoscopic_Appendectomy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003136"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0430"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0212"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SNARE_FLEXIBLE"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0321"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0454"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003221"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Forceps_Biopsy_Other"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lamina_propria_mucosae_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Solitary_lymphoid_follicle_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#millimeter"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#lost"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0301"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0434"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0216"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03065"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0325"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0458"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendiceal_Tip"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colonic_loop"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0349"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscle_layer_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0107"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NumberCategory"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003135"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ventral_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Region_of_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0300"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0542"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NotAvailable_ProcedureCompletion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lamina_propria_mucosae_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ColonoscopyExtent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003220"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0324"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0433"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03066"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0106"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0457"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0348"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0215"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0239"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Very_large"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003134"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Before-Overlap_DocTimeRel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_of_middle_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0432"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular_muscle_layer_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lamina_propria_mucosae_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03063"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Slight"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Flat_shape"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_supporting_tissue_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0258"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0149"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0367"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0125"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0016"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subdivision_of_longitudinal_muscle_layer_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0560"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0451"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0342"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0124"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0475"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0366"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0233"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0100"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Laparoscopic_interval_appendectomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serosa_of_distal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003133"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_left_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Longitudinal_muscle_layer_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#not_retrieved"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0039"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epithelium_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0257"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0015"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03064"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0148"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subserosa_of_middle_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Skin_level_cecostomy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0450"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0232"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0123"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0474"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0014"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0341"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0256"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0365"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Minute"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Buccal_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular_muscle_layer_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_rectal_lumen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03061"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0236"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0127"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anatomical_anastomosis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0018"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0345"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0478"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0103"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0369"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I4989"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epiploic_appendage_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epithelium_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0320"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0102"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anterior_wall_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0453"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0344"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0211"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Labial_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anoperinealis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03062"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0477"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0017"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0368"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0235"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0259"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0126"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Longitudinal_muscle_layer_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I4988"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003178"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serosa_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tischler_cervical_biopsy_forceps_device"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0101"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0210"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0452"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0234"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0476"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0343"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_distal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rostral_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#depressed"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PseudoNegation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I4987"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0120"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I4986"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0471"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0362"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Taenia_libera_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0495"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0035"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0386"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0253"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0011"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0144"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0277"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Supra_ampullary_part_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003153"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PseudoHistorical"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03060"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0059"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I4985"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0010"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0470"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0252"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0494"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0361"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0276"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0385"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0058"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0143"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0034"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Forceps_Biopsy_Flexible_Endoscopic"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003152"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003176"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Connective_tissue_of_visceral_peritoneum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mesothelium_of_serosa_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_of_proximal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0389"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dorsal_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0147"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0038"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mucosa_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0340"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_of_crypt_of_Lieberkuhn_of_large_intestine"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0473"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0013"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0364"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0231"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0146"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0388"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0497"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subserosa_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0255"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0122"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003151"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Areolar_connective_tissue_of_lamina_propria_mucosae_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0279"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0037"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0230"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0472"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0254"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0145"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0496"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0036"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0363"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0278"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0121"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0387"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0012"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003150"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular_fold_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Posterior_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colonic_mucous_membrane"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colon_part"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Longitudinal_muscle_layer_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Visceral_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Urinary_Tract_Endoscopic"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0491"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0031"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0382"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0140"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0273"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0079"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0297"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0055"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Proximal_part_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_perineal_flexure_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Meckel_Diverticulum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Percutaneous_cecostomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rectal_muscularis_propria"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular_muscularis_mucosae_of_large_intestine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snare_instrument"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mesothelium_of_serosa_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_anorectal_junction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_cloacogenic_area_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Posterior_wall_of_distal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0272"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0381"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0054"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0296"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0030"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0078"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Large"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Superficial_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscularis_mucosae_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0490"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular_muscle_layer_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epiploic_appendage_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colon_structure"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0360"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Recto_urethralis_superior"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0142"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0493"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0384"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0251"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0057"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0275"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0033"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0299"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003195"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#cecal_bascule"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ileal_submucosa"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Contralateral_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendiceal_serosa"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0141"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0250"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0492"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0032"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_of_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0274"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0383"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0298"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_colonic_haustra"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0056"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distal_part_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003170"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_sacral_flexure_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003194"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Posterior_wall_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscularis_mucosae_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Eye_Enucleation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colonic_subserosa"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Longitudinal_muscle_layer_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sigmoid_colon_part"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Uterine_Endoscopic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Completed_ProcedureCompletion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Gastrointestinal_Tract_Endoscopic"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sessile"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mild_Severity"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0075"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0293"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0051"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Transverse_colon_proper"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0099"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Small_intestinal_crypt_of_Lieberkuhn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendiceal_submucosa"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0160"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Before_DocTimeRel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ModerateToSevere_Severity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendiceal_muscularis_propria"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_ostium_appendicis_vermiformis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0098"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0074"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serosa_of_middle_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FORCEPS_BIOPSY_GYNECOLOGICAL_REPROCESSED"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_transverse_mesocolon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Polypectomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_distal_portion_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0050"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Longitudinal_muscle_layer_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0292"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Base_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Inferior_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_right_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Longitudinal_muscularis_mucosae_of_large_intestine"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0053"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0271"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0295"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0162"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0077"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0380"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular_layer_of_rectal_muscularis_propria"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_anti_mesenteric_border_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Middle_transverse_fold_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FORCEPS_BIOPSY_NON_ELECTRIC"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0294"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rectococcygeus"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0076"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0161"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distolingual_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Orifice_of_ileal_papilla"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0052"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0270"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#mass-like"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0408"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Submucosa_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FORCEPS_BIOPSY_BRONCHOSCOPE"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0517"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DefiniteExistence_Certainty"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0095"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Intermediate_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_right_colic_flexure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0071"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distal_half_of_appendix_structure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0516"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0407"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Loose_areolar_connective_tissue"/>
+        <Class IRI="#Abaxial_BodyLaterality"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Adaxial_BodyLaterality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Entire_plicae_semilunares_coli"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Left_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mesial_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cecostomy_Tube"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0094"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0070"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0519"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular_muscle_layer_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anterior_wall_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pelvirectal_junction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_appendiceal_mucous_membrane"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colonic_submucosa"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendiceal_mucous_membrane"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#flattened"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0097"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_cecum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0073"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_middle_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Tonsil"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mesothelium_of_serosa_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MildToModerate_Severity"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0291"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mesothelium_of_serosa_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0518"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0409"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SNARE_ENUCLEATING"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mucosa_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0096"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ileostomy_stoma"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Border_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Circular_muscle_layer_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_colonic_lumen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colonic_crypt_of_Lieberk_hn"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0290"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0072"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anterior_wall_of_proximal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cecal_caput"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rectosigmoid_Region"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Depressed"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0513"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0537"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0404"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0319"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0428"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Inferior_lateral_flexure_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I000448"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Submucosa_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003218"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0091"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Retrieved"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DefiniteNegatedExistence_Certainty"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rectal_gland"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anterior_wall_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0512"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_mesentery_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0403"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0536"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03004"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0427"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0209"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0318"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I000447"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colonic_epithelium"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ipsilateral_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0090"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epithelium_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03001"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Loop_ileostomy_stoma"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Patient_Experiencer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0515"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03025"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0406"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mucosa_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fatal_Severity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lamina_propria_of_large_intestine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Superior_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0093"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anterior_wall_of_distal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Fair"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Non_emergency_appendectomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mesosigmoid"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Polyp"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0405"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Colonic_lamina_propria"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0429"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serosa_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rectal_submucosa"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0092"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Incidental_Appendectomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Abaxial_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NotRetrieved"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Posterior_wall_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Submucosa_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lamina_muscularis_of_rectal_mucous_membrane"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#extends_to"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03023"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0533"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0400"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0424"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0315"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RECTAL_MUCOUS_MEMBRANE_DISCOLORATION_ORANGE"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0557"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0448"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0339"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0206"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscle_layer_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Rectal_ampulla"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Right_BodySide"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Suboptimal"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0532"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0423"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0556"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0205"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0447"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0314"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0229"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0338"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distal_part_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03024"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FamilyMember_Experiencer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_colonic_mucous_membrane"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Taenia_mesocolica_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SNARE_NON_ELECTRICAL"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lamina_propria_mucosae_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Connective_tissue_of_serosa_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Posterior_wall_of_middle_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Connective_tissue_of_serosa_of_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epithelium_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mesothelium_of_visceral_peritoneum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0511"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Deep_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03021"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0402"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0535"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0426"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0317"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#pedunculated"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0559"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distobuccal_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0208"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Muscle_layer_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Endoscopic_mucosal_resection"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0510"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0401"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03022"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0534"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0425"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Respiratory_Tract_Endoscopic"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0207"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0449"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0316"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Many"/>
+        <Class IRI="#Adequate"/>
     </Declaration>
     <Declaration>
         <Class IRI="#After_DocTimeRel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Cecostomy"/>
+        <Class IRI="#Ampulla_coli"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I000449"/>
+        <Class IRI="#Anatomical_anastomosis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Kevorkian_cervical_biopsy_forceps"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Solitary_lymphoid_follicle_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0335"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0444"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0117"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0359"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subserosa_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0468"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0226"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Posterior_wall_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serosa_of_proximal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0008"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LocationDistance"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003149"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0552"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Taenia_Coli"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0443"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0310"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0225"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0116"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0467"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0007"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0334"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SNARE_RIGID_SELF_OPENING"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0249"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Intestinal_villus_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0358"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Connective_tissue_of_serosa_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Longitudinal_muscle_layer_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PolypRetrieval"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003148"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0551"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anterior_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0442"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0333"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Distal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cold_biopsy_forceps"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Left_BodySide"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0422"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0313"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_mesentery_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0555"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0446"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0337"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0204"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Displaced_Meckel_s_diverticulum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0228"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0119"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003123"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003147"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Biopsy_forceps"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0421"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Laparoscopic_emergency_appendectomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_anorectal_junction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Poor_qualifier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_pericolic_tissue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mucosa_of_proximal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anterior_wall_of_descending_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0554"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0203"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0445"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0312"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0227"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_middle_portion_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0336"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0469"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0118"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0009"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Inadequate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_retrocecal_appendix"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0311"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0420"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0553"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Intermediate_lateral_flexure_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bowel_preparation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Posterior_wall_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Vestibular_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pouch_Kock"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Other_appendectomy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0028"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0488"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0379"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0246"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0004"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0137"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Large_Intestinal_Muscularis_Mucosa"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_plicae_semilunares_coli"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#KA_1006"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0221"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0112"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0463"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0003"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0330"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0245"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0354"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0487"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Unspecified"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Superior_lateral_flexure_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Colonoscope"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FORCEPS_BIOPSY_GYNECOLOGICAL"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_03052"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0269"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0378"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0136"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0027"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Connective_tissue_of_serosa_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#lamina_propria_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subdivision_of_wall_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0002"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0353"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0462"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0135"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0220"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0486"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0377"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0244"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0111"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PseudoFuture"/>
+        <Class IRI="#Anoperinealis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Anorectal_flexure"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0006"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0357"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0466"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0224"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0139"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_ostium_appendicis_vermiformis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0248"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0115"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Uncertain_Certainty"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Connective_tissue_of_serosa_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0550"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0441"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0223"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0465"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0332"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_mesenteric_border_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Incomplete_ProcedureCompletion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Good"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_left_colic_flexure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wall_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ProcedureMethod"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0138"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0247"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0489"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0029"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0356"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0114"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0005"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Axial_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Goose_Neck_Retrieval_Catheters"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Left_colic_flexure"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0440"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0331"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0113"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0464"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0355"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0222"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anterior_wall_of_rectum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epiploic_appendage_of_transverse_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mesothelium_of_serosa_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_rectal_mucous_membrane"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lumen_of_distal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dorsolateral_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_ileal_mucous_membrane"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0048"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Structure_of_peri_ileal_tissue"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0241"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendectomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bilateral_BodySide"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0350"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0483"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0265"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0156"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lateral_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#sessile"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0374"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0047"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0132"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0289"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0398"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0023"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_rectal_lumen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Caudal_BodyLaterality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Excellent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_colonic_haustra"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#not_recovered"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Submucosa_of_proximal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_peri_ileal_tissue"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0131"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0373"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0482"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0240"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0046"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0397"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0264"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0022"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0155"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0288"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Entire_appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Longitudinal_muscle_layer_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epithelium_of_appendix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Snares_Other"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Serosa_of_ascending_colon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Posterior_wall_of_cecum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0268"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0026"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Anterior_wall_of_middle_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0159"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epithelium_of_crypt_of_Lieberkuhn_of_large_intestine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Shape"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lamina_propria_mucosae_of_sigmoid_colon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0461"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0243"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0134"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0352"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0485"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0025"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0267"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0110"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0001"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0376"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Appendix_proper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subserosa_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DonorOtherMember_Experiencer"/>
+        <Class IRI="#Anterior_BodyLaterality"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Anterior_wall_of_ascending_colon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Recto_urethralis_inferior"/>
+        <Class IRI="#Anterior_wall_of_cecum"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Snares_Polyp"/>
+        <Class IRI="#Anterior_wall_of_descending_colon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Crypt_of_Lieberkuhn_of_ileum"/>
+        <Class IRI="#Anterior_wall_of_distal_part_of_ileum"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0158"/>
+        <Class IRI="#Anterior_wall_of_middle_part_of_ileum"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0049"/>
+        <Class IRI="#Anterior_wall_of_proximal_part_of_ileum"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SizeInMM"/>
+        <Class IRI="#Anterior_wall_of_rectum"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DonorFamilyMember_Experiencer"/>
+        <Class IRI="#Anterior_wall_of_sigmoid_colon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Entire_ileum"/>
+        <Class IRI="#Anterior_wall_of_transverse_colon"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0351"/>
+        <Class IRI="#Anterolateral_BodyLaterality"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0460"/>
+        <Class IRI="#Apical_BodyLaterality"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0484"/>
+        <Class IRI="#Appendectomy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0375"/>
+        <Class IRI="#Appendectomy_with_drainage"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0024"/>
+        <Class IRI="#Appendiceal_Tip"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0157"/>
+        <Class IRI="#Appendiceal_crypt_of_Lieberk_hn"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0242"/>
+        <Class IRI="#Appendiceal_lymphoid_nodule"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0399"/>
+        <Class IRI="#Appendiceal_mucous_membrane"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FORCEPS_BIOPSY_ELECTRIC_REPROCESSED"/>
+        <Class IRI="#Appendiceal_muscularis_propria"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0133"/>
+        <Class IRI="#Appendiceal_serosa"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Entire_sigmoid_mesocolon"/>
+        <Class IRI="#Appendiceal_submucosa"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Appendiceal_subserosa"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0266"/>
+        <Class IRI="#Appendix"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Mucosa_of_descending_colon"/>
+        <Class IRI="#Appendix_Epiploica"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Entire_colic_flexure"/>
+        <Class IRI="#Appendix_proper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Entire_proximal_portion_of_ileum"/>
+        <Class IRI="#Areolar_connective_tissue_of_lamina_propria_mucosae_of_rectum"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#LifeThreatening_Severity"/>
+        <Class IRI="#Areolar_connective_tissue_of_subserosa_of_descending_colon"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0261"/>
+        <Class IRI="#Areolar_connective_tissue_of_subserosa_of_sigmoid_colon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Muscle_layer_of_sigmoid_colon"/>
+        <Class IRI="#Ascending_colon"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0152"/>
+        <Class IRI="#Ascending_colon_proper"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0370"/>
+        <Class IRI="#Axial_BodyLaterality"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0043"/>
+        <Class IRI="#Base_of_appendix"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Distal_part_of_transverse_colon"/>
+        <Class IRI="#Before-Overlap_DocTimeRel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0285"/>
+        <Class IRI="#Before_DocTimeRel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Submucosa_of_transverse_colon"/>
+        <Class IRI="#Bilateral_BodySide"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0067"/>
+        <Class IRI="#Biopsy_forceps"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Ileal_lamina_propria"/>
+        <Class IRI="#Border_of_ileum"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I_00003161"/>
+        <Class IRI="#Bowel_preparation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Microscopic"/>
+        <Class IRI="#Buccal_BodyLaterality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Inferior_transverse_fold_of_rectum"/>
+        <Class IRI="#Catheters_Vascular_Retrieval_Snare"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Dense_elastic_connective_tissue"/>
+        <Class IRI="#Caudal_BodyLaterality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Entire_retrocecal_appendix"/>
+        <Class IRI="#Cecal_caput"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Structure_of_proximal_portion_of_ileum"/>
+        <Class IRI="#Cecostomy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0042"/>
+        <Class IRI="#Cecostomy_Tube"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0260"/>
+        <Class IRI="#Cecum"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0151"/>
+        <Class IRI="#Cecum_proper"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0284"/>
+        <Class IRI="#Cervical_biopsy_forceps"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0066"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#nodule"/>
+        <Class IRI="#Circular_fold_of_ileum"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Circular_layer_of_colonic_muscularis_propria"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Superior_lamina_of_sigmoid_mesocolon"/>
+        <Class IRI="#Circular_layer_of_rectal_muscularis_propria"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I_00003099"/>
+        <Class IRI="#Circular_muscle_layer_of_appendix"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Posterior_wall_of_proximal_part_of_ileum"/>
+        <Class IRI="#Circular_muscle_layer_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circular_muscle_layer_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circular_muscle_layer_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circular_muscle_layer_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circular_muscle_layer_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circular_muscle_layer_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circular_muscularis_mucosae_of_large_intestine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cold_biopsy_forceps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cold_snare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colon_part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colon_structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colon_wall_structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colonic_crypt_of_Lieberk_hn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colonic_epithelium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colonic_lamina_propria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colonic_loop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colonic_lumen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colonic_mucous_membrane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colonic_muscularis_propria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colonic_serosa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colonic_submucosa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colonic_subserosa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColonoscopyExtent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Completed_ProcedureCompletion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connective_tissue_of_serosa_of_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connective_tissue_of_serosa_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connective_tissue_of_serosa_of_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connective_tissue_of_serosa_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connective_tissue_of_serosa_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connective_tissue_of_serosa_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connective_tissue_of_serosa_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connective_tissue_of_visceral_peritoneum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contralateral_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creation_of_open_cecostomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crypt_of_Lieberkuhn_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DEVICE_BIOPSY_ENDOMYOCARDIAL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deep_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefiniteExistence_Certainty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefiniteNegatedExistence_Certainty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dense_elastic_connective_tissue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Depressed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Descending_colon_proper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diaphragmatic_flexure_of_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Displaced_Meckel_s_diverticulum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distal_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distal_half_of_appendix_structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distal_part_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distal_part_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distal_part_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distal_part_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distobuccal_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distolingual_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DonorFamilyMember_Experiencer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DonorOtherMember_Experiencer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dorsal_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dorsolateral_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dorsoventral_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emergency_appendectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emergency_excision_of_normal_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#End_ileostomy_stoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Endoscopic_mucosal_resection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_anorectal_junction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_anti_mesenteric_border_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_appendiceal_mucous_membrane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_appendix_epiploica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_cloacogenic_area_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_colic_flexure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_colonic_haustra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_colonic_lumen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_colonic_mucous_membrane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_colonic_muscularis_propria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_distal_portion_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_ileal_lumen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_ileal_mucous_membrane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_left_colic_flexure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_left_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_longitudinal_layer_of_colonic_muscularis_propria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_mesenteric_border_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_mesentery_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_middle_portion_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_ostium_appendicis_vermiformis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_peri_ileal_tissue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_pericolic_tissue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_perineal_flexure_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_plicae_semilunares_coli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_proximal_portion_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_rectal_ampulla"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_rectal_lumen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_rectal_mucous_membrane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_retrocecal_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_right_colic_flexure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_right_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_sacral_flexure_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_sigmoid_mesocolon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_supporting_tissue_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_transverse_fold_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entire_transverse_mesocolon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epiploic_appendage_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epiploic_appendage_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epiploic_appendage_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epiploic_appendage_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epithelium_of_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epithelium_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epithelium_of_crypt_of_Lieberkuhn_of_large_intestine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epithelium_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epithelium_of_large_intestine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epithelium_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epithelium_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epithelium_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epithelium_proper_of_large_intestine"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ExamExtentDistance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#centimeter"/>
+        <Class IRI="#Excellent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Taenia_coli_of_cecum"/>
+        <Class IRI="#Excision_of_appendiceal_stump"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0130"/>
+        <Class IRI="#Excision_of_ruptured_appendix_by_open_approach"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0021"/>
+        <Class IRI="#FORCEPS_BIOPSY_BRONCHOSCOPE"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0481"/>
+        <Class IRI="#FORCEPS_BIOPSY_ELECTRIC"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0263"/>
+        <Class IRI="#FORCEPS_BIOPSY_ELECTRIC_REPROCESSED"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Rectum"/>
+        <Class IRI="#FORCEPS_BIOPSY_GYNECOLOGICAL"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0372"/>
+        <Class IRI="#FORCEPS_BIOPSY_GYNECOLOGICAL_REPROCESSED"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Mass"/>
+        <Class IRI="#FORCEPS_BIOPSY_NON_ELECTRIC"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0287"/>
+        <Class IRI="#Fair"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0069"/>
+        <Class IRI="#FamilyMember_Experiencer"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0396"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0154"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I0045"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Moderate_Severity"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#I_00003183"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Subserosa_of_proximal_part_of_ileum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Several"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Small"/>
+        <Class IRI="#Fatal_Severity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Few"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Flat_shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flexure_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forceps_Biopsy_Flexible_Endoscopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forceps_Biopsy_Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forceps_Biopsy_Rigid_Endoscopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goose_Neck_Retrieval_Catheters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hepatic_flexure_of_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ileal_epithelium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ileal_lamina_propria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ileal_mucous_membrane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ileal_submucosa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ileostomy_stoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inadequate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incidental_Appendectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incomplete_ProcedureCompletion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inferior_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inferior_lamina_of_sigmoid_mesocolon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inferior_lateral_flexure_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inferior_transverse_fold_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intermediate_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intermediate_lateral_flexure_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interval_appendectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intestinal_villus_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ipsilateral_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KA_1000"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KA_1001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KA_1002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KA_1003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KA_1004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KA_1005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KA_1006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kevorkian_cervical_biopsy_forceps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Labial_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamina_muscularis_of_colonic_mucous_membrane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamina_muscularis_of_rectal_mucous_membrane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamina_propria_mucosae_of_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamina_propria_mucosae_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamina_propria_mucosae_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamina_propria_mucosae_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamina_propria_mucosae_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamina_propria_mucosae_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamina_propria_of_large_intestine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laparoscopic_Appendectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laparoscopic_emergency_appendectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laparoscopic_incidental_appendectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laparoscopic_interval_appendectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Large"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Large_Intestinal_Muscularis_Mucosa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lateral_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lateral_flexure_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Left_BodySide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Left_colic_flexure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Left_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LifeThreatening_Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lingual_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LocationDistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitudinal_layer_of_rectal_muscularis_propria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitudinal_muscle_layer_of_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitudinal_muscle_layer_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitudinal_muscle_layer_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitudinal_muscle_layer_of_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitudinal_muscle_layer_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitudinal_muscle_layer_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitudinal_muscle_layer_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitudinal_muscle_layer_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Longitudinal_muscularis_mucosae_of_large_intestine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loop_ileostomy_stoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loose_areolar_connective_tissue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_of_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_of_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_of_crypt_of_Lieberkuhn_of_large_intestine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_of_distal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_of_middle_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_of_proximal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumen_proper_of_large_intestine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Many"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meckel_Diverticulum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medial_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesial_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesosigmoid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesothelium_of_serosa_of_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesothelium_of_serosa_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesothelium_of_serosa_of_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesothelium_of_serosa_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesothelium_of_serosa_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesothelium_of_serosa_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesothelium_of_serosa_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesothelium_of_visceral_peritoneum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Microscopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Middle_transverse_fold_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MildToModerate_Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mild_Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModerateToSevere_Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moderate_Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mucosa_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mucosa_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mucosa_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mucosa_of_distal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mucosa_of_middle_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mucosa_of_proximal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mucosa_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mucosa_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_layer_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_layer_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_layer_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_layer_of_distal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_layer_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_layer_of_middle_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_layer_of_proximal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_layer_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_layer_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscularis_mucosae_of_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscularis_mucosae_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscularis_mucosae_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscularis_mucosae_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscularis_mucosae_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscularis_mucosae_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non_emergency_appendectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotAvailable_ProcedureCompletion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotRetrieved"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NumberCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Optimum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orifice_of_ileal_papilla"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherMember_Experiencer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other_appendectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Other_incidental_appendectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Overlap_DocTimeRel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parietal_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient_Experiencer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pedunculated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pelvic_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pelvirectal_junction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Percutaneous_cecostomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polyp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolypRetrieval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polypectomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poor_qualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior_wall_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior_wall_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior_wall_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior_wall_of_distal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior_wall_of_middle_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior_wall_of_proximal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior_wall_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior_wall_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior_wall_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pouch_Kock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProbableExistence_Certainty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProbableNegatedExistence_Certainty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcedureMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proximal_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proximal_half_of_appendix_structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proximal_part_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proximal_part_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proximal_part_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proximal_part_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PseudoFuture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PseudoHistorical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PseudoNegation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RECTAL_MUCOUS_MEMBRANE_DISCOLORATION_ORANGE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectal_ampulla"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectal_gland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectal_mucous_membrane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectal_muscularis_propria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectal_submucosa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recto_urethralis_inferior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recto_urethralis_superior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectococcygeus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectoperinealis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectosigmoid_Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refashioning_of_cecostomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region_of_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Retrieved"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Right_BodySide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Right_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rostral_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SNARE_ENUCLEATING"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SNARE_FLEXIBLE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SNARE_NON_ELECTRICAL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SNARE_RIGID_SELF_OPENING"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serosa_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serosa_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serosa_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serosa_of_distal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serosa_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serosa_of_middle_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serosa_of_proximal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serosa_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serosa_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serosa_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sessile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Several"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severe_Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sigmoid_Flexure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sigmoid_colon_part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Singular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SizeCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SizeInCM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SizeInMM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skin_level_cecostomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Slight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Small"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Small_intestinal_crypt_of_Lieberkuhn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snare_instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Colonoscope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Ear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Endoscopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Eye_Enucleation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Gastrointestinal_Tract_Endoscopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Nasal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Polyp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Rectal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Respiratory_Tract_Endoscopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Tonsil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Urinary_Tract_Endoscopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snares_Uterine_Endoscopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solitary_lymphoid_follicle_of_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solitary_lymphoid_follicle_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_anorectal_junction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_anti_mesenteric_border_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_cloacogenic_area_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_colic_flexure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_colonic_haustra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_ileal_lumen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_mesenteric_border_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_mesentery_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_middle_portion_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_ostium_appendicis_vermiformis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_peri_ileal_tissue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_pericolic_tissue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_perineal_flexure_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_plicae_semilunares_coli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_proximal_portion_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_rectal_lumen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_retrocecal_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_sacral_flexure_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_supporting_tissue_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_transverse_fold_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_of_transverse_mesocolon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subdivision_of_longitudinal_muscle_layer_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subdivision_of_wall_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Submucosa_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Submucosa_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Submucosa_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Submucosa_of_distal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Submucosa_of_middle_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Submucosa_of_proximal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Submucosa_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Submucosa_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suboptimal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subserosa_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subserosa_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subserosa_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subserosa_of_distal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subserosa_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subserosa_of_middle_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subserosa_of_proximal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subserosa_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subserosa_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subserosa_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superficial_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superior_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superior_lamina_of_sigmoid_mesocolon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superior_lateral_flexure_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superior_transverse_fold_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supra_ampullary_part_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taenia_Coli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taenia_coli_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taenia_libera_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taenia_mesocolica_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taenia_omentalis_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tischler_cervical_biopsy_forceps_device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transverse_colon_proper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uncertain_Certainty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unspecified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ventral_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Very_large"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vestibular_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visceral_BodyLaterality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_ascending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_cecum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_descending_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_distal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_middle_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_proximal_part_of_ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_rectum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_sigmoid_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_of_transverse_colon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cecal_bascule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#centimeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ileum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lamina_propria_of_appendix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#millimeter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#extends_to"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I000447"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I000448"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I000449"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0006"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0007"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0009"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0010"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0011"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0012"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0014"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0015"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0017"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0018"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0019"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#I0020"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0371"/>
+        <NamedIndividual IRI="#I0021"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0480"/>
+        <NamedIndividual IRI="#I0022"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0153"/>
+        <NamedIndividual IRI="#I0023"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0395"/>
+        <NamedIndividual IRI="#I0024"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0262"/>
+        <NamedIndividual IRI="#I0025"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0068"/>
+        <NamedIndividual IRI="#I0026"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#I0286"/>
+        <NamedIndividual IRI="#I0027"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0028"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0029"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0030"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0031"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0032"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0033"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0034"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0035"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0036"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0037"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0038"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0039"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0040"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0041"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0042"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0043"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#I0044"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#I0045"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0046"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0047"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0048"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0049"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0050"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0051"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0052"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0053"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0054"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0055"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0056"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0057"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0058"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0059"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0060"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0061"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0062"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0063"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0064"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0065"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0066"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0067"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0068"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0069"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0070"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0071"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0072"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0073"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0074"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0075"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0076"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0077"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0078"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0079"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0080"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0081"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0082"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0083"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0084"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0085"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0086"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0087"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0088"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0089"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0090"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0091"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0092"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0093"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0094"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0095"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0096"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0097"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0098"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0099"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0100"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0104"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0105"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0106"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0107"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0108"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0109"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0110"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0111"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0112"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0113"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0114"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0115"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0116"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0117"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0118"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0119"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0120"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0121"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0122"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0123"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0124"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0125"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0126"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0127"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0128"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0129"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0130"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0131"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0132"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0133"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0134"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0135"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0136"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0137"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0138"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0139"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0140"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0141"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0142"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0143"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0144"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0145"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0146"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0147"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0148"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0149"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0150"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0151"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0152"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0153"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0154"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0155"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0156"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0157"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0158"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0159"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0160"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0161"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0162"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0203"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0204"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0205"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0206"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0207"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0208"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0209"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0210"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0211"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0212"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0213"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0214"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0215"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0216"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0217"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0218"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0219"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0220"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0221"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0222"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0223"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0224"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0225"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0226"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0227"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0228"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0229"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0230"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0231"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0232"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0233"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0234"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0235"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0236"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0237"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0238"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0239"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0240"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0241"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0242"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0243"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0244"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0245"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0246"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0247"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0248"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0249"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0250"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0251"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0252"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0253"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0254"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0255"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0256"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0257"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0258"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0259"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0260"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0261"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0262"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0263"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0264"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0265"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0266"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0267"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0268"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0269"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0270"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0271"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0272"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0273"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0274"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0275"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0276"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0277"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0278"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0279"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0280"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0281"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0282"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0283"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0284"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0285"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0286"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0287"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0288"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0289"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0290"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0291"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0292"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0293"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0294"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0295"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0296"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0297"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0298"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0299"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0300"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0301"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0302"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0303"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0304"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0305"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0306"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0307"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0308"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0309"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0310"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0311"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0312"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0313"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0314"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0315"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0316"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0317"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0318"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0319"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0320"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0321"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0322"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0323"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0324"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0325"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0326"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0327"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0328"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0329"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0330"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0331"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0332"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0333"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0334"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0335"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0336"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0337"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0338"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0339"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0340"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0341"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0342"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0343"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0344"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0345"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0346"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0347"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0348"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0349"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0350"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0351"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0352"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0353"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0354"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0355"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0356"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0357"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0358"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0359"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0360"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0361"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0362"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0363"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0364"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0365"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0366"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0367"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0368"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0369"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0370"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0371"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0372"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0373"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0374"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0375"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0376"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0377"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0378"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0379"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0380"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0381"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0382"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0383"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0384"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0385"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0386"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0387"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0388"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0389"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0390"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0391"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0392"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0395"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0396"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0397"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0398"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0399"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0400"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0401"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0402"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0403"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0404"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0405"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0406"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0407"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0408"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0409"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0410"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0411"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0412"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0413"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0414"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0415"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0416"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0417"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0418"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0419"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0420"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0421"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0422"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0423"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0424"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0425"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0426"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0427"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0428"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0429"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0430"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0431"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0432"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0433"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0434"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0435"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0436"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0437"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0438"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0439"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0440"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0441"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0442"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0443"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0444"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0445"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0446"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0447"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0448"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0449"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0450"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0451"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0452"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0453"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0454"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0455"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0456"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0457"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0458"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0459"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0460"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0461"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0462"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0463"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0464"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0465"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0466"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0467"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0468"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0469"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0470"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0471"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0472"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0473"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0474"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0475"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0476"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0477"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0478"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0479"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0480"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0481"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0482"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0483"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0484"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0485"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0486"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0487"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0488"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0489"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0490"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0491"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0492"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0493"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0494"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0495"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0496"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0497"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0505"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0506"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0507"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0508"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0509"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0510"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0511"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0512"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0513"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0515"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0516"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0517"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0518"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0519"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0520"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0521"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0525"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0526"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0527"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0528"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0532"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0533"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0534"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0535"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0536"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0537"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0540"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0542"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0544"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0546"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0547"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0548"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0549"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0550"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0551"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0552"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0553"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0554"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0555"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0556"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0557"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0559"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I0560"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I4985"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I4986"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I4987"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I4988"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I4989"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I4990"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003090"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003091"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003092"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003093"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003094"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003099"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003112"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003113"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003114"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003116"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003123"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003133"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003134"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003135"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003136"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003138"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003147"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003148"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003149"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003150"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003151"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003152"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003153"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003161"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003170"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003176"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003178"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003181"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#I_00003182"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003183"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003194"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003195"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003218"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003220"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_00003221"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03014"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03015"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03017"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03018"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03019"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03021"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03022"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03034"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03052"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03058"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03060"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03061"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03062"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03063"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03064"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03065"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#I_03066"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#depressed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#flat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#flattened"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mass-like"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nodule"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#not_recovered"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#not_retrieved"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pedunculated"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sessile"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#KA_1000"/>
@@ -56966,5 +56966,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 3.5.2) http://owlapi.sourceforge.net -->
 

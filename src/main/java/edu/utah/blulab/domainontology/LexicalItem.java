@@ -1,20 +1,24 @@
+/*
+ * Copyright  2016  Department of Biomedical Informatics, University of Utah
+ * <p>
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * <p>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package edu.utah.blulab.domainontology;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Set;
-
 import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.OWLAnnotation;
-import org.semanticweb.owlapi.model.OWLAnnotationProperty;
-import org.semanticweb.owlapi.model.OWLClass;
-import org.semanticweb.owlapi.model.OWLDataFactory;
-import org.semanticweb.owlapi.model.OWLDataPropertyExpression;
-import org.semanticweb.owlapi.model.OWLIndividual;
-import org.semanticweb.owlapi.model.OWLLiteral;
-import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
+
+import java.util.ArrayList;
 
 public class LexicalItem {
 	private DomainOntology domain;
@@ -25,46 +29,13 @@ public class LexicalItem {
 		uri = itemURI;
 		this.domain = domain;
 		
-		/**if(getEnPrefLabel(item, manager, factory) != null){
-			term.setPrefTerm(getEnPrefLabel(item, manager, factory));
-		}
-		if(getEnglishDataProperty(item, manager, factory.getOWLDataProperty(IRI.create(OntologyConstants.ALT_LABEL))) != null){
-			term.setSynonym(getEnglishDataProperty(item, manager, factory.getOWLDataProperty(IRI.create(OntologyConstants.ALT_LABEL))));
-		}
-		if(getEnglishDataProperty(item, manager, factory.getOWLDataProperty(IRI.create(OntologyConstants.REGEX))) != null){
-			term.setRegex(getEnglishDataProperty(item, manager, factory.getOWLDataProperty(IRI.create(OntologyConstants.REGEX))));
-		}
-		
-		
-		//Get English action associated with lexical item
-		Set<OWLIndividual> enActions = item.getObjectPropertyValues(factory.getOWLObjectProperty(IRI.create(OntologyConstants.ACTION_EN)), 
-				manager.getOntology(IRI.create(OntologyConstants.CT_PM)));
-		if(!enActions.isEmpty()){
-			for(OWLIndividual action : enActions){
-				actionEn = action.asOWLNamedIndividual().getIRI().getShortForm();
-			}
-		}**/
+
 		
 		
 	}
 	
 	
-	
-	/**private static ArrayList<String> getEnglishDataProperty(OWLIndividual ind, OWLOntologyManager manager,
-			OWLDataPropertyExpression expression){
-		ArrayList<String> items = new ArrayList<String>();
-		Set<OWLLiteral> values = ind.getDataPropertyValues(expression, 
-				manager.getOntology(IRI.create(OntologyConstants.CT_PM)));
-		
-		for(OWLLiteral lit : values){
-			if(lit.hasLang("en")){
-				//System.out.println(lit.getLiteral());
-				items.add(lit.getLiteral());
-			}
-			
-		}
-		return items;
-	}**/
+
 	
 	public String getUri() {
 		return uri;
