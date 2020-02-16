@@ -19,7 +19,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>edu.utah.bmi.blulab</groupId>
     <artifactId>domainontology</artifactId>
-    <version>2016.12.2-SNAPSHOT</version>
+    <version>2016.12.2</version>
     <packaging>jar</packaging>
     <name>DomainOntologyAPI</name>
     <url>https://github.com/Blulab-Utah/domainOntology.git</url>
@@ -34,6 +34,7 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
+    <description>The api package to manipulate domainontology</description>
     <organization>
         <name>The Department of Biomedical Informatics, University of Utah</name>
         <url>bmi.utah.edu</url>

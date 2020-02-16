@@ -17,7 +17,6 @@
 package edu.utah.blulab.domainontology;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Created by melissa on 4/22/17.

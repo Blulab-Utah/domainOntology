@@ -16,11 +16,11 @@
 
 package edu.utah.blulab.domainontology;
 
-import java.util.ArrayList;
 import org.semanticweb.owlapi.model.OWLClass;
-import java.util.Collection;
 
 import javax.swing.tree.TreePath;
+import java.util.ArrayList;
+import java.util.Collection;
 
 
 /**

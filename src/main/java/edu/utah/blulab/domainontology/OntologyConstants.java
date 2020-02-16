@@ -16,9 +16,6 @@
 
 package edu.utah.blulab.domainontology;
 
-import org.semanticweb.owlapi.model.PrefixManager;
-import org.semanticweb.owlapi.util.DefaultPrefixManager;
-
 public class OntologyConstants {
 	public static final String CT_PM = "http://blulab.chpc.utah.edu/ontologies/v2/ConText.owl";
 	public static final String SO_PM = "http://blulab.chpc.utah.edu/ontologies/v2/Schema.owl";

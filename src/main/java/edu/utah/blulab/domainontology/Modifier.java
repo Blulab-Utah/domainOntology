@@ -16,11 +16,10 @@
 
 package edu.utah.blulab.domainontology;
 
-import java.util.*;
-
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
-import sun.rmi.runtime.Log;
+
+import java.util.*;
 
 public class Modifier {
 	private String uri;

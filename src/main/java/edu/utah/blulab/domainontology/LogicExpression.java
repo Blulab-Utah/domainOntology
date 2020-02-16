@@ -17,7 +17,6 @@
 package edu.utah.blulab.domainontology;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 @SuppressWarnings("serial")
 public class LogicExpression<E> extends ArrayList<E> {

@@ -16,10 +16,9 @@
 
 package edu.utah.blulab.domainontology;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 import org.semanticweb.owlapi.model.IRI;
+
+import java.util.ArrayList;
 
 public class NumericModifier extends Modifier {
 	private String type;

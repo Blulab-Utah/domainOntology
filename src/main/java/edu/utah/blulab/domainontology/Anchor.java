@@ -16,10 +16,11 @@
 
 package edu.utah.blulab.domainontology;
 
-import java.util.*;
-
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Anchor {
 	private String uri;
