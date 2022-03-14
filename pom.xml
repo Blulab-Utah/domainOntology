@@ -4,7 +4,7 @@
 
     <groupId>edu.utah.bmi.blulab</groupId>
     <artifactId>domainontology</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>2021-12-15</version>
     <packaging>jar</packaging>
     <name>DomainOntologyAPI</name>
     <url>https://github.com/Blulab-Utah/domainOntology.git</url>
