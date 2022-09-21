@@ -4,7 +4,6 @@ import java.util.*;
 
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLClass;
-import sun.rmi.runtime.Log;
 
 public class Modifier {
 	private String uri;

@@ -4,10 +4,10 @@ import org.semanticweb.owlapi.model.PrefixManager;
 import org.semanticweb.owlapi.util.DefaultPrefixManager;
 
 public class OntologyConstants {
-	public static final String CT_PM = "http://blulab.chpc.utah.edu/ontologies/v2/ConText.owl";
-	public static final String SO_PM = "http://blulab.chpc.utah.edu/ontologies/v2/Schema.owl";
-	//public static final String MO_PM = "http://blulab.chpc.utah.edu/ontologies/ModifierOntology.owl";
-	public static final String TM_PM = "http://blulab.chpc.utah.edu/ontologies/TermMapping.owl";
+	public static final String CT_PM = "https://blulab-utah.github.io/ontologies/v2/ConText.owl";
+	public static final String SO_PM = "https://blulab-utah.github.io/ontologies/v2/Schema.owl";
+	//public static final String MO_PM = "https://blulab-utah.github.io/ontologies/ModifierOntology.owl";
+	public static final String TM_PM = "https://blulab-utah.github.io/ontologies/TermMapping.owl";
 	public static final String PREF_LABEL = TM_PM + "#preferredTerm"; //SO_PM + "#prefLabel";
 	public static final String ALT_LABEL = TM_PM + "#synonym"; //SO_PM + "#altLabel";
 	public static final String HIDDEN_LABEL = TM_PM + "#misspelling"; //SO_PM + "#hiddenLabel";

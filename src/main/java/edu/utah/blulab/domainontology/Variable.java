@@ -178,10 +178,7 @@ public class Variable {
 		return parents;
 	}
 	
-	
-	/**
-	 * @return
-	 */
+
 	public ArrayList<Variable> getDirectChildren(){
 		ArrayList<Variable> children = new ArrayList<Variable>();
 		ArrayList<String> clsStrings = domain.getDirectSubClasses(domain.getClass(uri));

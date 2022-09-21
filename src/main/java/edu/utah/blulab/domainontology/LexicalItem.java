@@ -50,21 +50,7 @@ public class LexicalItem {
 	
 	
 	
-	/**private static ArrayList<String> getEnglishDataProperty(OWLIndividual ind, OWLOntologyManager manager,
-			OWLDataPropertyExpression expression){
-		ArrayList<String> items = new ArrayList<String>();
-		Set<OWLLiteral> values = ind.getDataPropertyValues(expression, 
-				manager.getOntology(IRI.create(OntologyConstants.CT_PM)));
-		
-		for(OWLLiteral lit : values){
-			if(lit.hasLang("en")){
-				//System.out.println(lit.getLiteral());
-				items.add(lit.getLiteral());
-			}
-			
-		}
-		return items;
-	}**/
+
 	
 	public String getUri() {
 		return uri;

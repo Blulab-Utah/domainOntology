@@ -3,7 +3,6 @@ package edu.utah.blulab.domainontology;
 import java.io.File;
 import java.util.*;
 
-import com.sun.media.sound.ModelIdentifier;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
@@ -22,7 +21,7 @@ public class DomainOntology {
 	 * Creates a domain ontology from a local owl file.
 	 * @param fileLocation A string representing the path of the domain owl file
 	 * @param useLocalFiles Set true if you want to use local copies
-	 * @throws Exception
+	 * @throws Exception Any error
 	 */
 	public DomainOntology(String fileLocation, boolean useLocalFiles) throws Exception{
 		manager = OWLManager.createOWLOntologyManager();

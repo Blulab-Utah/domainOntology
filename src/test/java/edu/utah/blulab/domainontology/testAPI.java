@@ -177,7 +177,7 @@ public class testAPI {
      */
     @Test
     public void testReflectionMethods() throws Exception {
-        DomainOntology domain = new DomainOntology("src/main/resources/colonoscopy_20141001.owl", true);
+        DomainOntology domain = new DomainOntology("src/main/resources/colonoscopyQuality.owl", true);
         System.out.println("domain's methods");
         domain.getDisplayName("");
         for (Method m : domain.getClass().getMethods()) {
